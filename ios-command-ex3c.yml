@@ -1,0 +1,25 @@
+---
+- name: IOS Commands
+  hosts: cisco
+  vars:
+    creds:
+      host: "{{ ansible_host }}"
+      username: "{{ username }}"
+      password: "{{ password }}"
+  tasks:
+    - name: IOS show arp command
+      ios_command:
+        provider: "{{ creds }}"
+        commands: show arp
+      register: show_arp
+    - name: IOS ARP table 
+      debug:
+        var: show_arp
+    - name: Set fact show_arp_new
+      set_fact: show_arp_new="{{ show_arp.stdout_lines[0] }}"
+    - name: Only IP 10.220.88.1
+      debug:
+        msg: "{{ item }}"
+      with_items: "{{ show_arp_new }}"
+      when: "'10.220.88.1' in item"
+

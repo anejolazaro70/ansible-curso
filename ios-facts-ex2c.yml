@@ -1,0 +1,41 @@
+---
+- name: IOS facts gathering
+  hosts: cisco
+  vars:
+    creds:
+      host: "{{ ansible_host }}"
+      username: "{{ username }}"
+      password: "{{ password }}"
+  tasks:
+    - name: IOS facts
+      ios_facts:
+        provider: "{{ creds }}"
+      tags: only-facts
+    - name: All-IP-addresses
+      debug:
+        msg: "{{ ansible_net_all_ipv4_addresses }}"
+    - name: Only IP address 10.220.88.21
+      debug:
+        msg: "{{ ansible_net_all_ipv4_addresses }}"
+      when: "ansible_net_all_ipv4_addresses[0] == '10.220.88.21'"
+    - name: Only IP address 10.220.88.21
+      debug:
+        msg: "{{ item }}"
+      with_items: "{{ ansible_net_all_ipv4_addresses }}"
+      when: "item == '10.220.88.21'"
+    - name: Interfaces Info
+      debug:
+        msg: "{{ item }}"
+      with_dict: "{{ ansible_net_interfaces }}"
+      tags: only-intf
+    - name: Only Interfaces name
+      debug:
+        msg: "{{ item.key }}"
+      with_dict: "{{ ansible_net_interfaces }}"
+      tags: only-intf-verb
+    - name: Only Interfaces UP
+      debug:
+        msg: "{{ item.key }}"
+      with_dict: "{{ ansible_net_interfaces }}"
+      when: "item.value.lineprotocol == 'up '"
+      tags: only-intf-up

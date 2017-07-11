@@ -1,0 +1,16 @@
+---
+- name: IOS facts gathering
+  hosts: cisco
+  vars:
+    creds:
+      host: "{{ ansible_host }}"
+      username: "{{ username }}"
+      password: "{{ password }}"
+  tasks:
+    - name: IOS facts with tags
+      ios_facts:
+        provider: "{{ creds }}"
+      tags: only-facts
+    - name: Serial-number
+      debug:
+        msg: "{{ ansible_net_serialnum }}"

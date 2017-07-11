@@ -1,0 +1,35 @@
+---
+- name: EOS Commands
+  hosts: pynet-sw7
+  vars:
+    creds:
+      host: "{{ ansible_host }}"
+      username: "{{ username }}"
+      password: "{{ password }}"
+      transport: eapi
+      use_ssl: True
+      validate_certs: no
+  tasks:
+    - name: EOS show arp command
+      eos_command:
+        provider: "{{ creds }}"
+        commands: show arp
+      register: show_arp
+    - name: EOS ARP table 
+      debug:
+        var: show_arp
+    - name: Only ARP info
+      set_fact: mac_table="{{ show_arp.stdout_lines[0].ipV4Neighbors }}"
+    - debug:
+        var: mac_table
+    - name: Only IP 10.220.88.1
+      debug:
+        msg: "{{ item.hwAddress }}"
+      with_items: "{{ mac_table }}"
+      when: "item.address == '10.220.88.1'"
+    - name: Only IP 10.220.88.1
+      set_fact: gateway_mac="{{ item.hwAddress }}"
+      with_items: "{{ mac_table }}"
+      when: "item.address == '10.220.88.1'"
+      debug:
+        var: set_fact

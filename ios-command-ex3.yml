@@ -1,0 +1,17 @@
+---
+- name: IOS Commands
+  hosts: cisco
+  vars:
+    creds:
+      host: "{{ ansible_host }}"
+      username: "{{ username }}"
+      password: "{{ password }}"
+  tasks:
+    - name: IOS show arp command
+      ios_command:
+        provider: "{{ creds }}"
+        commands: show arp
+      register: show_arp
+    - name: IOS ARP table 
+      debug:
+        var: show_arp
