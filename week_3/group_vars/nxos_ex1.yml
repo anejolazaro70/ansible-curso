@@ -1,0 +1,23 @@
+---
+provider_ssh:
+  host: "{{ ansible_host }}"
+  username: "{{ username }}"
+  password: "{{ password }}"
+  transport: cli
+provider_nxapi:
+  host: "{{ ansible_host }}"
+  username: "{{ username }}"
+  password: "{{ password }}"
+  transport: nxapi
+  validate_certs: no
+vlans_comun:
+  - vlan_id: 301
+    name: blue
+    admin_state: up
+  - vlan_id: 302
+    name: red
+    admin_state: up
+  - vlan_id: 303
+    name: green
+    admin_state: up
+vlans: "{{ vlans_comun }} + {{ vlans_unicas|default([]) }}"

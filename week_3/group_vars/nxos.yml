@@ -1,0 +1,13 @@
+---
+provider_ssh:
+  host: "{{ ansible_host }}"
+  username: "{{ username }}"
+  password: "{{ password }}"
+  transport: cli
+  validate_certs: no
+provider_nxapi:
+  host: "{{ ansible_host }}"
+  username: "{{ username }}"
+  password: "{{ password }}"
+  transport: nxapi
+  validate_certs: no

@@ -1,0 +1,22 @@
+---
+- name: NXOS SNMOP configuration
+  hosts: nxos
+  tasks:
+    - name: SNMP location config
+      nxos_snmp_location:
+        provider: "{{ provider_ssh }}"
+        location: "{{ location }}"
+        state: present
+      notify: write mem
+    - name: SNMP contact config
+      nxos_snmp_contact:
+        provider: "{{ provider_ssh }}"
+        contact: "{{ administrator }}"
+        state: present
+      notify: write mem
+  handlers:
+    - name: write mem
+      nxos_command:
+        provider: "{{ provider_ssh }}"
+        commands:
+          - copy run start

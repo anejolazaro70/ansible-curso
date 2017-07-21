@@ -1,0 +1,32 @@
+---
+- name: NXOS IP address configuration
+  hosts: nxos
+  tasks:
+    - name: IPv4 address configuration
+      nxos_ip_interface:
+        provider: "{{ provider_nxapi }}"
+        interface: "{{ item.interface }}"
+        version: v4
+        addr: "{{ item.addr_v4 }}"
+        mask: "{{ item.mask_v4 }}"
+      with_items: "{{ int_ip }}"
+      notify: write mem
+      tags: only_v4
+    - name: IPv6 address configuration
+      nxos_ip_interface:
+        provider: "{{ provider_ssh }}"
+        interface: "{{ item.interface }}"
+        version: v6
+        addr: "{{ item.addr_v6 }}"
+        mask: "{{ item.mask_v6 }}"
+      with_items: "{{ int_ip }}"
+      notify: write mem
+      tags: only_v6
+  handlers:
+    - name: write mem
+      nxos_command:
+        provider: "{{ provider_nxapi }}"
+        interval: 2
+        timeout: 10
+        commands: copy running startup
+      changed_when: True

@@ -1,0 +1,29 @@
+---
+- name: NXOS VLAN configuration
+  hosts: nxos
+  vars:
+    provider_nxapi:
+      host: "{{ ansible_host }}"
+      username: "{{ username }}"
+      password: "{{ password }}"
+      transport: nxapi
+      validate_certs: no
+    vlans:
+      - vlan_id: 301
+        name: blue
+        admin_state: up
+      - vlan_id: 302
+        name: red
+        admin_state: up
+      - vlan_id: 303
+        name: green
+        admin_state: up
+  tasks:
+    - name: VLAN configuration
+      nxos_vlan:
+        provider: "{{ provider_nxapi }}"
+        vlan_id: "{{ item.vlan_id }}"
+        admin_state: "{{ item.admin_state }}"
+        name: "{{ item.name }}"
+      with_items: "{{ vlans }}"
+    

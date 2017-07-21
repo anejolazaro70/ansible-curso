@@ -1,0 +1,11 @@
+---
+- name: NXOS PING
+  hosts: nxos
+  tasks:
+    - name: PING nxos2
+      nxos_ping:
+        provider: "{{ provider_ssh }}"
+        host: nxos1
+        dest: "{{ item }}"
+        count: 5
+      with_items: "{{ nxos_ipaddr }}"
