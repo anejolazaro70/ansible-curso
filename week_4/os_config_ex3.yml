@@ -1,0 +1,38 @@
+---
+- name: EOS config
+  hosts: pynet-sw5
+  gather_facts: False
+  tasks:
+    - name: INTERFACE config
+      eos_config:
+        provider: "{{ provider_eapi }}"
+        parents: "interface {{ item.name }}"
+        lines:
+          - "ip address {{ item.ip_v4 }}/{{ item.mask_v4 }}"
+          - "ipv6 address {{ item.ip_v6 }}/{{ item.mask_v6 }}"
+      with_items: "{{ interfaces }}"
+- name: IOS config
+  hosts: pynet-rtr1
+  gather_facts: False
+  tasks:
+    - name: INTERFACE config
+      ios_config:
+        provider: "{{ provider_cli }}"
+        parents: "interface {{ item.name }}"
+        lines:
+          - "ip address {{ item.ip_v4 }} {{ item.mask_v4 }}"
+          - "ipv6 address {{ item.ip_v6 }}/{{ item.mask_v6 }} "
+      with_items: "{{ interfaces }}"
+- name: NXOS config
+  hosts: nxos1
+  gather_facts: False
+  tasks:
+    - name: INTERFACE config
+      nxos_config:
+        provider: "{{ provider_nxapi }}"
+        parents: "interface {{ item.name }}"
+        lines:
+          - "ip address {{ item.ip_v4 }}/{{ item.mask_v4 }}"
+          - "ipv6 address {{ item.ip_v6 }}/{{ item.mask_v6 }}"
+      with_items: "{{ interfaces }}"
+                

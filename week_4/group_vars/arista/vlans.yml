@@ -1,0 +1,6 @@
+---
+vlans:
+  - { vlan_id: 100, vlan_name: ROJO }
+  - { vlan_id: 101, vlan_name: AMARILLO }
+  - { vlan_id: 102, vlan_name: VERDE }
+  - { vlan_id: 103, vlan_name: AZUL }

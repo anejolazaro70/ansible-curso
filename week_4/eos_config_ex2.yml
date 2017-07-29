@@ -1,0 +1,11 @@
+---
+- name: EOS config
+  hosts: arista
+  tasks:
+    - name: VLAN config
+      eos_config:
+        provider: "{{ provider_eapi }}"
+        parents: "vlan {{ item.vlan_id }}"
+        lines: "name {{ item.vlan_name }}"
+      with_items: "{{ vlans }}"
+        

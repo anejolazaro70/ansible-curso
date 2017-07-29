@@ -1,0 +1,11 @@
+---
+- name: IOS config
+  hosts: cisco
+  tasks:
+    - name: IOS SNMP config
+      ios_config:
+        provider: "{{ provider_cli }}"
+        lines:
+          - "snmp-server contact {{ snmp_data.contact }}"
+          - "snmp-server location {{ snmp_data.location }}"
+      

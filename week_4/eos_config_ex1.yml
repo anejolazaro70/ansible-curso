@@ -1,0 +1,9 @@
+---
+- name: EOS config
+  hosts: pynet-sw5
+  tasks:
+    - name: STATIC routes
+      eos_config:
+        provider: "{{ provider_eapi }}"
+        lines:
+          "{{ static_routes }}" 
