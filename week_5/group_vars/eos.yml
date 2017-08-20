@@ -1,0 +1,8 @@
+---
+provider_eapi:
+  hostname: "{{ ansible_host }}"
+  username: "{{ username }}"
+  password: "{{ password }}"
+  transport: eapi
+  use_ssl: yes
+  validate_cert: no

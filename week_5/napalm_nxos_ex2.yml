@@ -1,0 +1,28 @@
+---
+- name: NAPALM ANSIBLE MODULES WORKING WITH NXOS
+  hosts: nxos
+  tasks:
+    - name: NAPALM INSTALL CONFIG MERGE CONFIGURATIONS
+      napalm_install_config:
+        provider: "{{ credenciales }}"
+        config_file: "CFGS/{{ inventory_hostname }}-merge.txt"
+        commit_changes: False
+        replace_config: False
+        diff_file: "DIFFS/{{ inventory_hostname }}-diffs.txt"
+    - name: NAPALM GET FACTS VERIFY CHANGES
+      napalm_get_facts:
+        provider: "{{ credenciales }}"
+        filter: interfaces_ip
+    - set_fact:
+        intf_ip_info: "{{ napalm_interfaces_ip }}"
+    - assert:
+        that: "item.key in ['Ethernet2/1', 'Ethernet2/2', 'Ethernet2/3', 'Ethernet2/4']"
+      with_dict: "{{ intf_ip_info }}"
+    - set_fact:
+        intf_ip: "{{ item.value.ipv4 }}"
+      with_dict: "{{ intf_ip_info }}"
+    - set_fact:
+        intf_ip_ipv4: "{{ item.key }}"
+      with_dict: "{{ intf_ip }}"
+    - assert:
+        that: "intf_ip_ipv4 in ipv4_intf_add"

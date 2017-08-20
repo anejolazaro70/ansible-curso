@@ -1,0 +1,27 @@
+---
+- name: NAPALM ANSIBLE MODULES WORKING WITH ARISTA
+  hosts: pynet-sw8
+  tasks:
+  #  - name: ARISTA BACKUP CONFIG
+  #    eos_config:
+  #      provider: "{{ provider_eapi }}"
+  #      backup: yes
+    - name: NAPALM REPLACE CONFIG
+      napalm_install_config:
+        provider: "{{ credenciales }}"
+        config_file: "CFGS/{{inventory_hostname }}_config"
+        commit_changes: False
+        replace_config: True
+        diff_file: "DIFFS/{{ inventory_hostname }}-diffs.txt"
+      register: diff_output
+    - debug:
+        var: diff_output
+      when: diff_output.msg
+    - name: NAPALM REPLACE CONFIG WHEN CHANGE
+      napalm_install_config:        
+        provider: "{{ credenciales }}"
+        config_file: "CFGS/{{inventory_hostname }}_config_v2"
+        commit_changes: True
+        replace_config: True
+        diff_file: "DIFFS/{{ inventory_hostname }}-diffs.txt"
+      when: not diff_output.msg

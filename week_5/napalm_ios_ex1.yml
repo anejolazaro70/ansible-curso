@@ -1,0 +1,23 @@
+---
+- name: NAPALM ANSIBLE MODULES
+  hosts: cisco
+  tasks:
+    - name: IOS GET_FACTS LLDP NEIGHBORS
+      napalm_get_facts:
+        provider: "{{ credenciales }}"
+        filter: lldp_neighbors
+    - name: LLDP NEIGHBORS INFO
+      set_fact:
+        lldp_info: "{{ napalm_lldp_neighbors }}"
+    - name: ONLY LLDP NEIGHBORS NAME
+      debug:
+        msg: "{{ item.value }}"
+      with_dict: "{{ lldp_info }}"
+    - name: LLDP NEIGHBORS LIST
+      set_fact:
+        lldp_neig_list: "{{ item.value }}"
+      with_dict: "{{ lldp_info }}"
+    - name: ¿¿EXISTE NEIGHBOR??
+      assert:
+        that: "item.hostname == 'twb-sf-hpsw1'"
+      with_items: "{{ lldp_neig_list }}"

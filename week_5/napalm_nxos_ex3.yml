@@ -1,0 +1,28 @@
+---
+- name: NAPALM ANSIBLE MODULES WORKING WITH NXOS
+  hosts: nxos
+  tasks:
+    - name: NAPALM INSTALL CONFIG MERGE CONFIGURATIONS
+      napalm_install_config:
+        provider: "{{ credenciales }}"
+        config_file: "CFGS/{{ inventory_hostname }}-bgp-merge.txt"
+        commit_changes: False
+        replace_config: False
+        diff_file: "DIFFS/{{ inventory_hostname }}-diffs.txt"
+    - name: NAPALM GET FACTS SHOW BGP NEIGHBORS
+      napalm_get_facts:
+        provider: "{{ credenciales }}"
+        filter: "bgp_neighbors"
+    - set_fact:
+        bgp_neigh_peers: "{{ napalm_bgp_neighbors.global.peers }}"
+    - debug:
+        msg: "{{ item.key }}"
+      with_dict: "{{ bgp_neigh_peers }}"
+    - set_fact:
+        bgp_ip: "{{ item.key }}"
+        bgp_ip_state: "{{ item.value.is_up }}"
+      with_dict: "{{ bgp_neigh_peers }}"
+      when: "item.key in ['10.10.10.1', '10.10.10.2']"
+    - assert:
+        that: "{{ bgp_ip_state }}"
+      when: "bgp_ip in ['10.10.10.1', '10.10.10.2']"
