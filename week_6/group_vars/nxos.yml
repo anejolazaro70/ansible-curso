@@ -1,0 +1,14 @@
+---
+creds_nxapi:
+  host: "{{ ansible_host }}"
+  username: "{{ username }}"
+  password: "{{ password }}"
+  transport: nxapi
+  validate_certs: no
+
+creds_napalm:
+  host: "{{ ansible_host }}"
+  username: "{{ username }}"
+  password: "{{ password }}"
+  dev_os: "nxos"
+  optional_agrs: {}

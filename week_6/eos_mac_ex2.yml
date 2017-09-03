@@ -1,0 +1,21 @@
+---
+- name: LOOKUP TEMPLATES
+  hosts: pynet-sw8
+  tasks:
+    - name: GET MAC-ADDRESS TABLE WITH NAPALM GET FACTS
+      napalm_get_facts:
+        provider: "{{ arista_connection }}"
+        filter: mac_address_table
+    - set_fact:
+        mac_tab: "{{ napalm_mac_address_table }}"
+    - debug:
+        var: "{{ item }}"
+      with_items: "{{ mac_tab }}"
+    - debug:
+        msg: "{{ lookup('template', './templates/new_arp-table_ex2.j2') }}"
+    - debug:
+        msg: "{{ lookup('template', './templates/new_arp-table_ex2.j2') | from_yaml }}"
+    - set_fact:
+        new_mac_table: "{{ lookup('template', './templates/new_arp-table_ex2.j2') | from_yaml }}"
+    - debug:
+        var: new_mac_table

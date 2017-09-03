@@ -1,0 +1,50 @@
+---
+- name: LOOKUPS FILTERS
+  hosts: nxos1
+  vars:
+    my_ntp_servers:
+      - 10.1.1.1
+      - 10.1.1.2
+    my_command_ntp_servers:
+      - 'ntp server 10.1.1.1'
+      - 'ntp server 10.1.1.2'
+  tasks:
+    - name: NXOS NTP SERVERS CONFIGURATION
+      nxos_config:
+        provider: "{{ creds_nxapi }}"
+        lines: "{{ my_command_ntp_servers }}"
+    - name: NXOS GATHERING NTP SERVERS
+      nxos_command:
+        provider: "{{ creds_nxapi }}"
+        commands: "show ntp peers"
+      register: output
+    - debug:
+        msg: "{{ output }}"
+    - set_fact:
+        ntp_servers: "{{ output.stdout_lines[0]['TABLE_peers']['ROW_peers'] }}"
+    - debug:
+        msg: "{{ lookup('template', './templates/ntp_servers_ex3.j2').splitlines() }}"
+    - set_fact:
+        ntp_servers_config: "{{ lookup('template', './templates/ntp_servers_ex3.j2').splitlines() | from_yaml }}"
+    - name: CONFIGURED NTP SERVERS
+      debug:
+        var: ntp_servers_config
+    - name: SHOW CONFIGURED NTP SERVERS DIFFERENT THAN MUST BE
+      debug:
+        msg: "{{ ntp_servers_config | difference(my_ntp_servers) }}"
+    - name: SAVE CONFIGURED NTP SERVERS DIFFERENT THAN MUST BE 
+      set_fact:
+        no_valid_ntp: "{{ ntp_servers_config | difference(my_ntp_servers) | list }}"
+    - name: DELETE NO VALID NTP SERVERS
+      set_fact:
+        delete_ntp: "{{ lookup('template', './templates/del_ntp_servers_ex3.j2') | from_yaml }}"
+    - debug:
+        var: delete_ntp
+    - name: NXOS DELETING NTP SERVERS
+      nxos_config:
+        provider: "{{ creds_nxapi }}"
+        lines: "{{ delete_ntp }}"
+      register: output
+    - debug:
+        msg: "{{ output }}"
+      

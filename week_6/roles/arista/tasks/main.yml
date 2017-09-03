@@ -1,0 +1,5 @@
+---
+- name: EOS CONFIG
+  eos_config:
+    provider: "{{ creds_eapi }}"
+    lines: "{{ global_config }}"

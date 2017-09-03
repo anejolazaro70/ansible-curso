@@ -1,0 +1,25 @@
+---
+- name: WORKING WITH TEMPLATES
+  hosts: cisco
+  tasks:
+    - name: IOS GET SHOW VERSION FROM DEVICE
+      ios_command:
+        provider: "{{ creds_ssh }}"
+        commands:
+          - show version
+      register: output
+
+    - set_fact:
+        version: "{{ output.stdout_lines[0] }}"
+    - debug:
+        var: version
+    - set_fact:
+        file: "./{{ inventory_hostname }}-show_version.txt"
+    - name: COPY SHOW VERSION TO FILE
+      copy:
+        content: "{{ version }}"
+        dest: "{{ file }}"
+    - set_fact:
+        new_version: "{{ lookup('file', file) }}"
+    - debug:
+        var: new_version

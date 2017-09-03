@@ -1,0 +1,7 @@
+---
+arista_connection:
+  host: "{{ ansible_host }}"
+  username: "{{ username }}"
+  password: "{{ password }}"
+  dev_os: "eos"
+  optional_args: {}

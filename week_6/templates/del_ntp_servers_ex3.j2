@@ -1,0 +1,4 @@
+---
+{% for ntp_peer in no_valid_ntp %}
+- no ntp server {{ ntp_peer }}
+{% endfor %}
