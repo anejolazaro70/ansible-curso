@@ -1,0 +1,29 @@
+{% macro port_shutdown() -%}
+shutdown
+no switchport
+mac-address {{ mac }}
+{%- endmacro %}
+
+{% macro port_no_shutdown() -%}
+no switchport
+mac-address {{ mac }}
+no shutdown
+{%- endmacro %}
+
+{% for intf in interfaces %}
+{% if intf.name == "mgmt0" %}
+interface {{ intf.name }}
+vrf member {{ intf.vrf }}
+ip address {{ intf.ip }}/{{ intf.mask }}
+{% elif intf.name == "Vlan1" %}
+interface {{ intf.name }}
+{% elif intf.name in list_intf_ip %}
+interface {{ intf.name }}
+{{ port_no_shutdown() }}
+ip address {{ intf.ip }}/{{ intf.mask }}
+{% endif %}
+{% endfor %}
+{% for index in range(5,49) %}
+interface Ethernet2/{{ index }}
+{{ port_shutdown() }}
+{% endfor %}

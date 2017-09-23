@@ -1,0 +1,9 @@
+ip domain-name {{ default_domain }}
+ip name-server {{ name_server1 }} {{ name_server2 }}
+ntp server {{ ntp1 }}
+ntp server {{ ntp2 }}
+
+{% include 'nxos_conf_vrf_ex3c.j2' %}
+
+{% include 'nxos_conf_intf_ex3c.j2' %}
+

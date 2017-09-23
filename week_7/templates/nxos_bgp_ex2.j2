@@ -1,0 +1,7 @@
+interface Ethernet2/4
+ipv6 address 2001:db8:{{ local_id }}:200c::{{ local_router_id }}/64
+no shutdown
+
+router bgp 22
+neighbor 2001:db8:{{ remote_id }}:200c::{{ remote_router_id }} remote-as 22
+address-family ipv6 unicast

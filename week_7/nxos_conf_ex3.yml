@@ -1,0 +1,8 @@
+---
+- name: NXOS CONFIGURATION TEMPLATE
+  hosts: nxos
+  tasks:
+    - name: Generate Full Configuration
+      template:
+        src: "./templates/nxos_conf_ex3c.j2"
+        dest: "./CFGS/{{ inventory_hostname }}.cfg"

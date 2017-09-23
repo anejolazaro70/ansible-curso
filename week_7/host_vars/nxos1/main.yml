@@ -1,0 +1,21 @@
+---
+interfaces:
+  - name: mgmt0
+    vrf: management
+    ip: 10.0.0.71
+    mask: 24
+  - name: Vlan1
+  - name: Ethernet2/1
+    ip: 10.10.10.1
+    mask: 24
+  - name: Ethernet2/2
+    ip: 10.10.20.1
+    mask: 24
+  - name: Ethernet2/3
+    ip: 10.12.13.14
+    mask: 24
+  - name: Ethernet2/4
+    ip: 10.10.40.1
+    mask: 24
+
+mac: 2cc2.604f.feb2

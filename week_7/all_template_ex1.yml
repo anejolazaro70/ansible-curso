@@ -1,0 +1,34 @@
+---
+- name: ALL PLATFORM CONFIGURATION TEMPLATES
+  hosts: cisco:nxos:arista
+  tasks:
+    - name: Generate Configuration
+      template:
+        src: "./templates/all_platform.j2"
+        dest: "./CFGS/{{ inventory_hostname }}.cfg"
+      tags:
+        - cisco
+        - nxos
+        - arista
+- name: Apply IOS Configuration
+  hosts: cisco
+  tasks:
+    - ios_config:
+        provider: "{{ creds }}"
+        src: "./CFGS/{{ inventory_hostname }}.cfg"
+      tags: 'cisco'
+- name: Apply NXOS Configuration
+  hosts: nxos
+  tasks:
+    - nxos_config:
+        provider: "{{ creds_ssh }}"
+        src: "./CFGS/{{ inventory_hostname }}.cfg"
+      tags: 'nxos'
+- name: Apply ARISTA Configuration
+  hosts: arista
+  tasks:
+    - eos_config:
+        provider: "{{ creds_eapi }}"
+        src: "./CFGS/{{ inventory_hostname }}.cfg"
+      tags: 'arista'
+         

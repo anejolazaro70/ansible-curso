@@ -1,0 +1,28 @@
+---
+- name: NXOS CONFIGURATION TEMPLATING
+  hosts: nxos
+  tasks:
+    - name: IPv6 BGP Neighbor Templating
+      template: 
+        src: "./templates/nxos_bgp_ex2.j2"
+        dest: "./CFGS/{{ inventory_hostname }}.cfg"
+    - name: Configuration Merge
+      napalm_install_config:
+        provider: "{{ credenciales }}"
+        config_file: "./CFGS/{{ inventory_hostname }}.cfg"
+        commit_changes: True
+        replace_config: False
+        diff_file: "./DIFFS/{{ inventory_hostname }}.txt"
+    - name: BGP IPv6 Neighbor Delete on NXOS2
+      nxos_config:
+        provider: "{{ creds_ssh }}"
+        lines:
+          - no neighbor 2001:db8:1111:200c::2 remote-as 22
+        parents: router bgp 22
+    - name: BGP IPv6 Address Delete on NXOS2
+      nxos_config:
+        provider: "{{ creds_ssh }}"
+        lines:
+          - no ipv6 address 2001:db8:2222:200c::1/64
+        parents: interface Ethernet2/4
+       

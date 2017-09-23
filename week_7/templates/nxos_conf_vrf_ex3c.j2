@@ -1,0 +1,6 @@
+{% for vrf in vrfs %}
+vrf context {{ vrf }}
+{% if vrf == "management" %}
+ip route {{ default_dest }}/{{ default_mask}} {{ next_hop }}
+{% endif %}
+{% endfor %}

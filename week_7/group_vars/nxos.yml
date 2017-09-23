@@ -1,0 +1,42 @@
+---
+platform: nxos
+
+creds_nxapi:
+  host: "{{ ansible_host }}"
+  username: "{{ username }}"
+  password: "{{ password }}"
+  transport: nxapi
+  use_ssl: yes
+  validate_certs: no
+
+creds_ssh:
+  host: "{{ ansible_host }}"
+  username: "{{ username }}"
+  password: "{{ password }}"
+  transport: cli
+  validate_certs: no
+
+credenciales:
+  host: "{{ ansible_host }}"
+  username: "{{ username }}"
+  password: "{{ password }}"
+  dev_os: "nxos"
+  optional_args:
+    port: 8443
+
+vrfs:
+  - management
+  - red1
+  - red2
+  - red3
+
+default_dest: 0.0.0.0
+default_mask: 0
+next_hop: 10.0.0.2
+
+list_intf_ip:
+  - Ethernet2/1
+  - Ethernet2/2
+  - Ethernet2/3
+  - Ethernet2/4
+

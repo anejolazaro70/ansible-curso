@@ -1,0 +1,5 @@
+---
+local_id: 2222
+local_router_id: 2
+remote_id: 1111
+remote_router_id: 1
