@@ -1,0 +1,877 @@
+2017-09-29 10:03:54,508 p=3354 u=jlazaro |    3354 1506704634.50765: starting run
+2017-09-29 10:03:54,603 p=3354 u=jlazaro |    3354 1506704634.60313: Loading CacheModule 'memory' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/cache/memory.py
+2017-09-29 10:03:54,801 p=3354 u=jlazaro |    3354 1506704634.80140: Loading CallbackModule 'default' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/default.py
+2017-09-29 10:03:54,802 p=3354 u=jlazaro |    3354 1506704634.80203: Loading CallbackModule 'actionable' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/actionable.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,802 p=3354 u=jlazaro |    3354 1506704634.80232: Loading CallbackModule 'context_demo' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/context_demo.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,802 p=3354 u=jlazaro |    3354 1506704634.80260: Loading CallbackModule 'debug' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/debug.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,802 p=3354 u=jlazaro |    3354 1506704634.80277: Loading CallbackModule 'default' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/default.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,803 p=3354 u=jlazaro |    3354 1506704634.80322: Loading CallbackModule 'dense' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/dense.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,833 p=3354 u=jlazaro |    3354 1506704634.83341: Loading CallbackModule 'foreman' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/foreman.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,835 p=3354 u=jlazaro |    3354 1506704634.83525: Loading CallbackModule 'hipchat' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/hipchat.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,835 p=3354 u=jlazaro |    3354 1506704634.83561: Loading CallbackModule 'jabber' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/jabber.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,835 p=3354 u=jlazaro |    3354 1506704634.83587: Loading CallbackModule 'json' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/json.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,836 p=3354 u=jlazaro |    3354 1506704634.83629: Loading CallbackModule 'junit' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/junit.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,836 p=3354 u=jlazaro |    3354 1506704634.83657: Loading CallbackModule 'log_plays' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/log_plays.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,837 p=3354 u=jlazaro |    3354 1506704634.83702: Loading CallbackModule 'logentries' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/logentries.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,837 p=3354 u=jlazaro |    3354 1506704634.83739: Loading CallbackModule 'logstash' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/logstash.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,840 p=3354 u=jlazaro |    3354 1506704634.84019: Loading CallbackModule 'mail' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/mail.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,840 p=3354 u=jlazaro |    3354 1506704634.84047: Loading CallbackModule 'minimal' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/minimal.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,840 p=3354 u=jlazaro |    3354 1506704634.84075: Loading CallbackModule 'oneline' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/oneline.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,841 p=3354 u=jlazaro |    3354 1506704634.84104: Loading CallbackModule 'osx_say' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/osx_say.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,841 p=3354 u=jlazaro |    3354 1506704634.84134: Loading CallbackModule 'profile_tasks' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/profile_tasks.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,841 p=3354 u=jlazaro |    3354 1506704634.84164: Loading CallbackModule 'selective' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/selective.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,841 p=3354 u=jlazaro |    3354 1506704634.84189: Loading CallbackModule 'skippy' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/skippy.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,842 p=3354 u=jlazaro |    3354 1506704634.84225: Loading CallbackModule 'slack' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/slack.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,843 p=3354 u=jlazaro |    3354 1506704634.84307: Loading CallbackModule 'syslog_json' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/syslog_json.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,843 p=3354 u=jlazaro |    3354 1506704634.84334: Loading CallbackModule 'timer' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/timer.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,843 p=3354 u=jlazaro |    3354 1506704634.84361: Loading CallbackModule 'tree' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/callback/tree.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,843 p=3354 u=jlazaro |    3354 1506704634.84384: in VariableManager get_vars()
+2017-09-29 10:03:54,859 p=3354 u=jlazaro |    3354 1506704634.85960: Loading FilterModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/core.py
+2017-09-29 10:03:54,869 p=3354 u=jlazaro |    3354 1506704634.86983: Loading FilterModule 'ipaddr' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py
+2017-09-29 10:03:54,870 p=3354 u=jlazaro |    3354 1506704634.87021: Loading FilterModule 'json_query' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py
+2017-09-29 10:03:54,870 p=3354 u=jlazaro |    3354 1506704634.87052: Loading FilterModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py
+2017-09-29 10:03:54,875 p=3354 u=jlazaro |    3354 1506704634.87501: Loading TestModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/core.py
+2017-09-29 10:03:54,875 p=3354 u=jlazaro |    3354 1506704634.87528: Loading TestModule 'files' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/files.py
+2017-09-29 10:03:54,875 p=3354 u=jlazaro |    3354 1506704634.87554: Loading TestModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py
+2017-09-29 10:03:54,878 p=3354 u=jlazaro |    3354 1506704634.87851: done with get_vars()
+2017-09-29 10:03:54,879 p=3354 u=jlazaro |    3354 1506704634.87901: in VariableManager get_vars()
+2017-09-29 10:03:54,879 p=3354 u=jlazaro |    3354 1506704634.87939: Loading FilterModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,879 p=3354 u=jlazaro |    3354 1506704634.87954: Loading FilterModule 'ipaddr' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,879 p=3354 u=jlazaro |    3354 1506704634.87968: Loading FilterModule 'json_query' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,879 p=3354 u=jlazaro |    3354 1506704634.87980: Loading FilterModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,880 p=3354 u=jlazaro |    3354 1506704634.88007: Loading TestModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,880 p=3354 u=jlazaro |    3354 1506704634.88020: Loading TestModule 'files' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,880 p=3354 u=jlazaro |    3354 1506704634.88032: Loading TestModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,881 p=3354 u=jlazaro |    3354 1506704634.88100: done with get_vars()
+2017-09-29 10:03:54,882 p=3354 u=jlazaro |  PLAY [VAULT CONFIGURATION] *****************************************************
+2017-09-29 10:03:54,890 p=3354 u=jlazaro |    3354 1506704634.88984: Loading StrategyModule 'linear' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/strategy/linear.py
+2017-09-29 10:03:54,892 p=3354 u=jlazaro |    3354 1506704634.89260: getting the remaining hosts for this loop
+2017-09-29 10:03:54,892 p=3354 u=jlazaro |    3354 1506704634.89276: done getting the remaining hosts for this loop
+2017-09-29 10:03:54,892 p=3354 u=jlazaro |    3354 1506704634.89289: building list of next tasks for hosts
+2017-09-29 10:03:54,893 p=3354 u=jlazaro |    3354 1506704634.89300: getting the next task for host pynet-rtr1
+2017-09-29 10:03:54,893 p=3354 u=jlazaro |    3354 1506704634.89314: done getting next task for host pynet-rtr1
+2017-09-29 10:03:54,893 p=3354 u=jlazaro |    3354 1506704634.89326:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:03:54,893 p=3354 u=jlazaro |    3354 1506704634.89337:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:03:54,893 p=3354 u=jlazaro |    3354 1506704634.89348: getting the next task for host pynet-rtr2
+2017-09-29 10:03:54,893 p=3354 u=jlazaro |    3354 1506704634.89360: done getting next task for host pynet-rtr2
+2017-09-29 10:03:54,893 p=3354 u=jlazaro |    3354 1506704634.89371:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:03:54,893 p=3354 u=jlazaro |    3354 1506704634.89382:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:03:54,893 p=3354 u=jlazaro |    3354 1506704634.89392: done building task lists
+2017-09-29 10:03:54,894 p=3354 u=jlazaro |    3354 1506704634.89402: counting tasks in each state of execution
+2017-09-29 10:03:54,894 p=3354 u=jlazaro |    3354 1506704634.89413: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 2
+	num_rescue: 0
+	num_always: 0
+2017-09-29 10:03:54,894 p=3354 u=jlazaro |    3354 1506704634.89423: advancing hosts in ITERATING_TASKS
+2017-09-29 10:03:54,894 p=3354 u=jlazaro |    3354 1506704634.89434: starting to advance hosts
+2017-09-29 10:03:54,894 p=3354 u=jlazaro |    3354 1506704634.89444: getting the next task for host pynet-rtr1
+2017-09-29 10:03:54,894 p=3354 u=jlazaro |    3354 1506704634.89455: done getting next task for host pynet-rtr1
+2017-09-29 10:03:54,894 p=3354 u=jlazaro |    3354 1506704634.89467:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:03:54,894 p=3354 u=jlazaro |    3354 1506704634.89479:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:03:54,894 p=3354 u=jlazaro |    3354 1506704634.89490: getting the next task for host pynet-rtr2
+2017-09-29 10:03:54,895 p=3354 u=jlazaro |    3354 1506704634.89502: done getting next task for host pynet-rtr2
+2017-09-29 10:03:54,895 p=3354 u=jlazaro |    3354 1506704634.89513:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:03:54,895 p=3354 u=jlazaro |    3354 1506704634.89523:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:03:54,895 p=3354 u=jlazaro |    3354 1506704634.89534: done advancing hosts to next task
+2017-09-29 10:03:54,898 p=3354 u=jlazaro |    3354 1506704634.89855: done queuing things up, now waiting for results queue to drain
+2017-09-29 10:03:54,898 p=3354 u=jlazaro |    3354 1506704634.89871: results queue empty
+2017-09-29 10:03:54,898 p=3354 u=jlazaro |    3354 1506704634.89883: checking for any_errors_fatal
+2017-09-29 10:03:54,898 p=3354 u=jlazaro |    3354 1506704634.89894: done checking for any_errors_fatal
+2017-09-29 10:03:54,899 p=3354 u=jlazaro |    3354 1506704634.89904: checking for max_fail_percentage
+2017-09-29 10:03:54,899 p=3354 u=jlazaro |    3354 1506704634.89914: done checking for max_fail_percentage
+2017-09-29 10:03:54,899 p=3354 u=jlazaro |    3354 1506704634.89924: checking to see if all hosts have failed and the running result is not ok
+2017-09-29 10:03:54,899 p=3354 u=jlazaro |    3354 1506704634.89934: done checking to see if all hosts have failed
+2017-09-29 10:03:54,899 p=3354 u=jlazaro |    3354 1506704634.89943: getting the remaining hosts for this loop
+2017-09-29 10:03:54,899 p=3354 u=jlazaro |    3354 1506704634.89955: done getting the remaining hosts for this loop
+2017-09-29 10:03:54,899 p=3354 u=jlazaro |    3354 1506704634.89967: building list of next tasks for hosts
+2017-09-29 10:03:54,899 p=3354 u=jlazaro |    3354 1506704634.89977: getting the next task for host pynet-rtr1
+2017-09-29 10:03:54,899 p=3354 u=jlazaro |    3354 1506704634.89989: done getting next task for host pynet-rtr1
+2017-09-29 10:03:54,900 p=3354 u=jlazaro |    3354 1506704634.90001:  ^ task is: TASK: CISCO GET FACTS
+2017-09-29 10:03:54,900 p=3354 u=jlazaro |    3354 1506704634.90012:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:03:54,900 p=3354 u=jlazaro |    3354 1506704634.90022: getting the next task for host pynet-rtr2
+2017-09-29 10:03:54,900 p=3354 u=jlazaro |    3354 1506704634.90034: done getting next task for host pynet-rtr2
+2017-09-29 10:03:54,900 p=3354 u=jlazaro |    3354 1506704634.90045:  ^ task is: TASK: CISCO GET FACTS
+2017-09-29 10:03:54,900 p=3354 u=jlazaro |    3354 1506704634.90055:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:03:54,900 p=3354 u=jlazaro |    3354 1506704634.90066: done building task lists
+2017-09-29 10:03:54,900 p=3354 u=jlazaro |    3354 1506704634.90076: counting tasks in each state of execution
+2017-09-29 10:03:54,900 p=3354 u=jlazaro |    3354 1506704634.90087: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 2
+	num_rescue: 0
+	num_always: 0
+2017-09-29 10:03:54,901 p=3354 u=jlazaro |    3354 1506704634.90098: advancing hosts in ITERATING_TASKS
+2017-09-29 10:03:54,901 p=3354 u=jlazaro |    3354 1506704634.90107: starting to advance hosts
+2017-09-29 10:03:54,901 p=3354 u=jlazaro |    3354 1506704634.90117: getting the next task for host pynet-rtr1
+2017-09-29 10:03:54,901 p=3354 u=jlazaro |    3354 1506704634.90129: done getting next task for host pynet-rtr1
+2017-09-29 10:03:54,901 p=3354 u=jlazaro |    3354 1506704634.90140:  ^ task is: TASK: CISCO GET FACTS
+2017-09-29 10:03:54,901 p=3354 u=jlazaro |    3354 1506704634.90151:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:03:54,901 p=3354 u=jlazaro |    3354 1506704634.90162: getting the next task for host pynet-rtr2
+2017-09-29 10:03:54,901 p=3354 u=jlazaro |    3354 1506704634.90174: done getting next task for host pynet-rtr2
+2017-09-29 10:03:54,901 p=3354 u=jlazaro |    3354 1506704634.90184:  ^ task is: TASK: CISCO GET FACTS
+2017-09-29 10:03:54,902 p=3354 u=jlazaro |    3354 1506704634.90195:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:03:54,902 p=3354 u=jlazaro |    3354 1506704634.90205: done advancing hosts to next task
+2017-09-29 10:03:54,902 p=3354 u=jlazaro |    3354 1506704634.90218: getting variables
+2017-09-29 10:03:54,902 p=3354 u=jlazaro |    3354 1506704634.90229: in VariableManager get_vars()
+2017-09-29 10:03:54,902 p=3354 u=jlazaro |    3354 1506704634.90266: Loading FilterModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,902 p=3354 u=jlazaro |    3354 1506704634.90283: Loading FilterModule 'ipaddr' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,903 p=3354 u=jlazaro |    3354 1506704634.90295: Loading FilterModule 'json_query' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,903 p=3354 u=jlazaro |    3354 1506704634.90306: Loading FilterModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,903 p=3354 u=jlazaro |    3354 1506704634.90332: Loading TestModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,903 p=3354 u=jlazaro |    3354 1506704634.90345: Loading TestModule 'files' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,903 p=3354 u=jlazaro |    3354 1506704634.90357: Loading TestModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,904 p=3354 u=jlazaro |    3354 1506704634.90442: done with get_vars()
+2017-09-29 10:03:54,904 p=3354 u=jlazaro |    3354 1506704634.90463: done getting variables
+2017-09-29 10:03:54,904 p=3354 u=jlazaro |    3354 1506704634.90476: sending task start callback, copying the task so we can template it temporarily
+2017-09-29 10:03:54,904 p=3354 u=jlazaro |    3354 1506704634.90488: done copying, going to template now
+2017-09-29 10:03:54,905 p=3354 u=jlazaro |    3354 1506704634.90499: done templating
+2017-09-29 10:03:54,905 p=3354 u=jlazaro |    3354 1506704634.90510: here goes the callback...
+2017-09-29 10:03:54,905 p=3354 u=jlazaro |  TASK [CISCO GET FACTS] *********************************************************
+2017-09-29 10:03:54,905 p=3354 u=jlazaro |    3354 1506704634.90532: sending task start callback
+2017-09-29 10:03:54,905 p=3354 u=jlazaro |    3354 1506704634.90543: entering _queue_task() for pynet-rtr1/ios_facts
+2017-09-29 10:03:54,905 p=3354 u=jlazaro |    3354 1506704634.90553: Creating lock for ios_facts
+2017-09-29 10:03:54,907 p=3354 u=jlazaro |    3354 1506704634.90665: worker is 1 (out of 2 available)
+2017-09-29 10:03:54,907 p=3354 u=jlazaro |    3354 1506704634.90742: exiting _queue_task() for pynet-rtr1/ios_facts
+2017-09-29 10:03:54,907 p=3354 u=jlazaro |    3354 1506704634.90781: getting variables
+2017-09-29 10:03:54,908 p=3354 u=jlazaro |    3354 1506704634.90800: in VariableManager get_vars()
+2017-09-29 10:03:54,910 p=3354 u=jlazaro |    3354 1506704634.91086: Loading FilterModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,911 p=3354 u=jlazaro |    3354 1506704634.91105: Loading FilterModule 'ipaddr' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,911 p=3354 u=jlazaro |    3354 1506704634.91120: Loading FilterModule 'json_query' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,911 p=3354 u=jlazaro |    3354 1506704634.91136: Loading FilterModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,911 p=3354 u=jlazaro |    3354 1506704634.91169: Loading TestModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,911 p=3354 u=jlazaro |    3354 1506704634.91185: Loading TestModule 'files' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,912 p=3354 u=jlazaro |    3354 1506704634.91200: Loading TestModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,912 p=3354 u=jlazaro |    3363 1506704634.91209: running TaskExecutor() for pynet-rtr1/TASK: CISCO GET FACTS
+2017-09-29 10:03:54,912 p=3354 u=jlazaro |    3363 1506704634.91265: in run()
+2017-09-29 10:03:54,913 p=3354 u=jlazaro |    3363 1506704634.91310: calling self._execute()
+2017-09-29 10:03:54,913 p=3354 u=jlazaro |    3354 1506704634.91339: done with get_vars()
+2017-09-29 10:03:54,913 p=3354 u=jlazaro |    3354 1506704634.91361: done getting variables
+2017-09-29 10:03:54,913 p=3354 u=jlazaro |    3354 1506704634.91378: entering _queue_task() for pynet-rtr2/ios_facts
+2017-09-29 10:03:54,915 p=3354 u=jlazaro |    3363 1506704634.91498: Loading FilterModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,915 p=3354 u=jlazaro |    3363 1506704634.91514: Loading FilterModule 'ipaddr' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,915 p=3354 u=jlazaro |    3363 1506704634.91527: Loading FilterModule 'json_query' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,915 p=3354 u=jlazaro |    3363 1506704634.91539: Loading FilterModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,915 p=3354 u=jlazaro |    3354 1506704634.91479: worker is 2 (out of 2 available)
+2017-09-29 10:03:54,915 p=3354 u=jlazaro |    3363 1506704634.91567: Loading TestModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,915 p=3354 u=jlazaro |    3363 1506704634.91580: Loading TestModule 'files' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,915 p=3354 u=jlazaro |    3354 1506704634.91571: exiting _queue_task() for pynet-rtr2/ios_facts
+2017-09-29 10:03:54,915 p=3354 u=jlazaro |    3363 1506704634.91592: Loading TestModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,916 p=3354 u=jlazaro |    3354 1506704634.91606: done queuing things up, now waiting for results queue to drain
+2017-09-29 10:03:54,916 p=3354 u=jlazaro |    3354 1506704634.91624: waiting for pending results...
+2017-09-29 10:03:54,919 p=3354 u=jlazaro |    3363 1506704634.91927: Loading FilterModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,919 p=3354 u=jlazaro |    3363 1506704634.91944: Loading FilterModule 'ipaddr' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,919 p=3354 u=jlazaro |    3363 1506704634.91957: Loading FilterModule 'json_query' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,919 p=3354 u=jlazaro |    3363 1506704634.91970: Loading FilterModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,919 p=3354 u=jlazaro |    3363 1506704634.91993: Loading TestModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,920 p=3354 u=jlazaro |    3363 1506704634.92006: Loading TestModule 'files' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,920 p=3354 u=jlazaro |    3363 1506704634.92018: Loading TestModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,920 p=3354 u=jlazaro |    3364 1506704634.92014: running TaskExecutor() for pynet-rtr2/TASK: CISCO GET FACTS
+2017-09-29 10:03:54,920 p=3354 u=jlazaro |    3364 1506704634.92078: in run()
+2017-09-29 10:03:54,921 p=3354 u=jlazaro |    3364 1506704634.92151: calling self._execute()
+2017-09-29 10:03:54,923 p=3354 u=jlazaro |    3363 1506704634.92346: Loading Connection 'local' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/connection/local.py
+2017-09-29 10:03:54,923 p=3354 u=jlazaro |    3364 1506704634.92370: Loading FilterModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,923 p=3354 u=jlazaro |    3364 1506704634.92389: Loading FilterModule 'ipaddr' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,924 p=3354 u=jlazaro |    3363 1506704634.92401: Loading ShellModule 'csh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/csh.py
+2017-09-29 10:03:54,924 p=3354 u=jlazaro |    3364 1506704634.92409: Loading FilterModule 'json_query' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,924 p=3354 u=jlazaro |    3364 1506704634.92426: Loading FilterModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,924 p=3354 u=jlazaro |    3363 1506704634.92443: Loading ShellModule 'fish' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/fish.py
+2017-09-29 10:03:54,924 p=3354 u=jlazaro |    3364 1506704634.92476: Loading TestModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,925 p=3354 u=jlazaro |    3364 1506704634.92493: Loading TestModule 'files' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,925 p=3354 u=jlazaro |    3363 1506704634.92495: Loading ShellModule 'powershell' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/powershell.py
+2017-09-29 10:03:54,925 p=3354 u=jlazaro |    3364 1506704634.92510: Loading TestModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,925 p=3354 u=jlazaro |    3363 1506704634.92522: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py
+2017-09-29 10:03:54,925 p=3354 u=jlazaro |    3363 1506704634.92549: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,926 p=3354 u=jlazaro |    3363 1506704634.92651: Loading ActionModule 'ios' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/action/ios.py
+2017-09-29 10:03:54,926 p=3354 u=jlazaro |    3363 1506704634.92670: starting attempt loop
+2017-09-29 10:03:54,926 p=3354 u=jlazaro |    3363 1506704634.92683: running the handler
+2017-09-29 10:03:54,928 p=3354 u=jlazaro |    3363 1506704634.92793: Loading Connection 'persistent' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/connection/persistent.py
+2017-09-29 10:03:54,928 p=3354 u=jlazaro |    3363 1506704634.92820: Loading ShellModule 'csh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/csh.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,928 p=3354 u=jlazaro |    3363 1506704634.92834: Loading ShellModule 'fish' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/fish.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,928 p=3354 u=jlazaro |    3363 1506704634.92847: Loading ShellModule 'powershell' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/powershell.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,928 p=3354 u=jlazaro |    3363 1506704634.92859: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,928 p=3354 u=jlazaro |    3363 1506704634.92871: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,929 p=3354 u=jlazaro |    3364 1506704634.92933: Loading FilterModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,929 p=3354 u=jlazaro |    3363 1506704634.92943: Loading Connection 'ssh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/connection/ssh.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:54,929 p=3354 u=jlazaro |    3364 1506704634.92954: Loading FilterModule 'ipaddr' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,929 p=3354 u=jlazaro |    3364 1506704634.92969: Loading FilterModule 'json_query' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,929 p=3354 u=jlazaro |    3364 1506704634.92984: Loading FilterModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,930 p=3354 u=jlazaro |    3364 1506704634.93010: Loading TestModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,930 p=3354 u=jlazaro |    3364 1506704634.93032: Loading TestModule 'files' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,930 p=3354 u=jlazaro |    3364 1506704634.93047: Loading TestModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,934 p=3354 u=jlazaro |    3364 1506704634.93412: Loading Connection 'local' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/connection/local.py
+2017-09-29 10:03:54,934 p=3354 u=jlazaro |    3364 1506704634.93474: Loading ShellModule 'csh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/csh.py
+2017-09-29 10:03:54,935 p=3354 u=jlazaro |    3364 1506704634.93518: Loading ShellModule 'fish' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/fish.py
+2017-09-29 10:03:54,935 p=3354 u=jlazaro |    3364 1506704634.93569: Loading ShellModule 'powershell' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/powershell.py
+2017-09-29 10:03:54,936 p=3354 u=jlazaro |    3364 1506704634.93603: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py
+2017-09-29 10:03:54,936 p=3354 u=jlazaro |    3364 1506704634.93632: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,937 p=3354 u=jlazaro |    3364 1506704634.93744: Loading ActionModule 'ios' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/action/ios.py
+2017-09-29 10:03:54,937 p=3354 u=jlazaro |    3364 1506704634.93763: starting attempt loop
+2017-09-29 10:03:54,937 p=3354 u=jlazaro |    3364 1506704634.93777: running the handler
+2017-09-29 10:03:54,939 p=3354 u=jlazaro |    3364 1506704634.93896: Loading Connection 'persistent' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/connection/persistent.py
+2017-09-29 10:03:54,939 p=3354 u=jlazaro |    3364 1506704634.93925: Loading ShellModule 'csh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/csh.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,939 p=3354 u=jlazaro |    3364 1506704634.93947: Loading ShellModule 'fish' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/fish.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,939 p=3354 u=jlazaro |    3364 1506704634.93963: Loading ShellModule 'powershell' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/powershell.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,939 p=3354 u=jlazaro |    3364 1506704634.93978: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,939 p=3354 u=jlazaro |    3364 1506704634.93992: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:54,940 p=3354 u=jlazaro |    3364 1506704634.94072: Loading Connection 'ssh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/connection/ssh.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:55,133 p=3365 u=jlazaro |    3365 1506704635.13369: Loading Connection 'ssh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/connection/ssh.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:55,143 p=3365 u=jlazaro |  creating new control socket for host cisco1.twb-tech.com:22 as user pyclass
+2017-09-29 10:03:55,143 p=3365 u=jlazaro |  control socket path is /home/jlazaro/.ansible/pc/d0ab19e8d0
+2017-09-29 10:03:55,143 p=3365 u=jlazaro |  current working directory is /home/jlazaro
+2017-09-29 10:03:55,143 p=3365 u=jlazaro |  using connection plugin network_cli
+2017-09-29 10:03:55,159 p=3366 u=jlazaro |    3366 1506704635.15895: Loading Connection 'ssh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/connection/ssh.py (found_in_cache=False, class_only=True)
+2017-09-29 10:03:55,169 p=3366 u=jlazaro |  creating new control socket for host cisco2.twb-tech.com:22 as user pyclass
+2017-09-29 10:03:55,169 p=3366 u=jlazaro |  control socket path is /home/jlazaro/.ansible/pc/7e16896f2b
+2017-09-29 10:03:55,170 p=3366 u=jlazaro |  current working directory is /home/jlazaro
+2017-09-29 10:03:55,171 p=3366 u=jlazaro |  using connection plugin network_cli
+  3376 1506704635.20001: Loading Connection 'network_cli' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/connection/network_cli.py
+2017-09-29 10:03:55,200 p=3365 u=jlazaro |    3376 1506704635.20001: Loading Connection 'network_cli' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/connection/network_cli.py
+  3376 1506704635.20123: Loading ShellModule 'csh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/csh.py
+2017-09-29 10:03:55,201 p=3365 u=jlazaro |    3376 1506704635.20123: Loading ShellModule 'csh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/csh.py
+  3376 1506704635.20156: Loading ShellModule 'fish' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/fish.py
+2017-09-29 10:03:55,201 p=3365 u=jlazaro |    3376 1506704635.20156: Loading ShellModule 'fish' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/fish.py
+  3376 1506704635.20203: Loading ShellModule 'powershell' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/powershell.py
+2017-09-29 10:03:55,202 p=3365 u=jlazaro |    3376 1506704635.20203: Loading ShellModule 'powershell' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/powershell.py
+  3376 1506704635.20227: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py
+2017-09-29 10:03:55,202 p=3365 u=jlazaro |    3376 1506704635.20227: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py
+  3376 1506704635.20253: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:55,202 p=3365 u=jlazaro |    3376 1506704635.20253: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+  3378 1506704635.22802: Loading Connection 'network_cli' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/connection/network_cli.py
+2017-09-29 10:03:55,228 p=3366 u=jlazaro |    3378 1506704635.22802: Loading Connection 'network_cli' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/connection/network_cli.py
+  3378 1506704635.22927: Loading ShellModule 'csh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/csh.py
+2017-09-29 10:03:55,229 p=3366 u=jlazaro |    3378 1506704635.22927: Loading ShellModule 'csh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/csh.py
+  3378 1506704635.22961: Loading ShellModule 'fish' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/fish.py
+2017-09-29 10:03:55,229 p=3366 u=jlazaro |    3378 1506704635.22961: Loading ShellModule 'fish' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/fish.py
+  3378 1506704635.23009: Loading ShellModule 'powershell' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/powershell.py
+2017-09-29 10:03:55,230 p=3366 u=jlazaro |    3378 1506704635.23009: Loading ShellModule 'powershell' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/powershell.py
+  3378 1506704635.23032: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py
+2017-09-29 10:03:55,230 p=3366 u=jlazaro |    3378 1506704635.23032: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py
+  3378 1506704635.23058: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:55,230 p=3366 u=jlazaro |    3378 1506704635.23058: Loading ShellModule 'sh' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+2017-09-29 10:03:56,266 p=3365 u=jlazaro |  connecting to host cisco1.twb-tech.com returned an error
+2017-09-29 10:03:56,266 p=3365 u=jlazaro |  (14, 'Bad address')
+2017-09-29 10:03:56,538 p=3366 u=jlazaro |  ssh connection done, setting terminal
+  3378 1506704636.54112: Loading TerminalModule 'ios' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/terminal/ios.py
+2017-09-29 10:03:56,541 p=3366 u=jlazaro |    3378 1506704636.54112: Loading TerminalModule 'ios' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/terminal/ios.py
+2017-09-29 10:03:56,541 p=3366 u=jlazaro |  ssh connection has completed successfully
+2017-09-29 10:03:56,541 p=3366 u=jlazaro |  connection established to cisco2.twb-tech.com in 0:00:01.370270
+2017-09-29 10:03:57,162 p=3366 u=jlazaro |  incoming request accepted on persistent socket
+2017-09-29 10:03:57,163 p=3366 u=jlazaro |  socket operation is CONTEXT
+2017-09-29 10:03:57,163 p=3366 u=jlazaro |  updating play_context for connection
+2017-09-29 10:03:57,163 p=3366 u=jlazaro |  socket operation is EXEC
+2017-09-29 10:03:57,164 p=3366 u=jlazaro |  attempting to open shell to device
+2017-09-29 10:03:57,208 p=3366 u=jlazaro |  shell successfully opened
+2017-09-29 10:03:57,208 p=3366 u=jlazaro |  socket operation completed with rc 0
+2017-09-29 10:03:57,227 p=3354 u=jlazaro |    3364 1506704637.22701: ANSIBALLZ: Using lock for ios_facts
+2017-09-29 10:03:57,227 p=3354 u=jlazaro |    3364 1506704637.22731: ANSIBALLZ: Acquiring lock
+2017-09-29 10:03:57,227 p=3354 u=jlazaro |    3364 1506704637.22746: ANSIBALLZ: Lock acquired: 140047693826704
+2017-09-29 10:03:57,227 p=3354 u=jlazaro |    3364 1506704637.22761: ANSIBALLZ: Creating module
+2017-09-29 10:03:57,343 p=3354 u=jlazaro |    3364 1506704637.34301: ANSIBALLZ: Writing module
+2017-09-29 10:03:57,343 p=3354 u=jlazaro |    3364 1506704637.34330: ANSIBALLZ: Renaming module
+2017-09-29 10:03:57,343 p=3354 u=jlazaro |    3364 1506704637.34345: ANSIBALLZ: Done creating module
+2017-09-29 10:03:57,344 p=3354 u=jlazaro |    3364 1506704637.34400: _low_level_execute_command(): starting
+2017-09-29 10:03:57,344 p=3354 u=jlazaro |    3364 1506704637.34415: _low_level_execute_command(): executing: /bin/sh -c 'echo ~ && sleep 0'
+2017-09-29 10:03:57,344 p=3354 u=jlazaro |    3364 1506704637.34434: in local.exec_command()
+2017-09-29 10:03:57,344 p=3354 u=jlazaro |    3364 1506704637.34446: opening command with Popen()
+2017-09-29 10:03:57,347 p=3354 u=jlazaro |    3364 1506704637.34693: done running command with Popen()
+2017-09-29 10:03:57,347 p=3354 u=jlazaro |    3364 1506704637.34725: getting output with communicate()
+2017-09-29 10:03:57,349 p=3354 u=jlazaro |    3364 1506704637.34925: done communicating
+2017-09-29 10:03:57,349 p=3354 u=jlazaro |    3364 1506704637.34940: done with local.exec_command()
+2017-09-29 10:03:57,349 p=3354 u=jlazaro |    3364 1506704637.34956: _low_level_execute_command() done: rc=0, stdout=/home/jlazaro
+, stderr=
+2017-09-29 10:03:57,349 p=3354 u=jlazaro |    3364 1506704637.34974: _low_level_execute_command(): starting
+2017-09-29 10:03:57,349 p=3354 u=jlazaro |    3364 1506704637.34988: _low_level_execute_command(): executing: /bin/sh -c '( umask 77 && mkdir -p "` echo /home/jlazaro/.ansible/tmp/ansible-tmp-1506704637.34-81634717176805 `" && echo ansible-tmp-1506704637.34-81634717176805="` echo /home/jlazaro/.ansible/tmp/ansible-tmp-1506704637.34-81634717176805 `" ) && sleep 0'
+2017-09-29 10:03:57,350 p=3354 u=jlazaro |    3364 1506704637.35002: in local.exec_command()
+2017-09-29 10:03:57,350 p=3354 u=jlazaro |    3364 1506704637.35015: opening command with Popen()
+2017-09-29 10:03:57,352 p=3354 u=jlazaro |    3364 1506704637.35215: done running command with Popen()
+2017-09-29 10:03:57,352 p=3354 u=jlazaro |    3364 1506704637.35242: getting output with communicate()
+2017-09-29 10:03:57,356 p=3354 u=jlazaro |    3364 1506704637.35601: done communicating
+2017-09-29 10:03:57,356 p=3354 u=jlazaro |    3364 1506704637.35615: done with local.exec_command()
+2017-09-29 10:03:57,356 p=3354 u=jlazaro |    3364 1506704637.35632: _low_level_execute_command() done: rc=0, stdout=ansible-tmp-1506704637.34-81634717176805=/home/jlazaro/.ansible/tmp/ansible-tmp-1506704637.34-81634717176805
+, stderr=
+2017-09-29 10:03:57,356 p=3354 u=jlazaro |    3364 1506704637.35653: transferring module to remote /home/jlazaro/.ansible/tmp/ansible-tmp-1506704637.34-81634717176805/ios_facts.py
+2017-09-29 10:03:57,357 p=3354 u=jlazaro |    3364 1506704637.35777: done transferring module to remote
+2017-09-29 10:03:57,358 p=3354 u=jlazaro |    3364 1506704637.35806: _low_level_execute_command(): starting
+2017-09-29 10:03:57,358 p=3354 u=jlazaro |    3364 1506704637.35821: _low_level_execute_command(): executing: /bin/sh -c 'chmod u+x /home/jlazaro/.ansible/tmp/ansible-tmp-1506704637.34-81634717176805/ /home/jlazaro/.ansible/tmp/ansible-tmp-1506704637.34-81634717176805/ios_facts.py && sleep 0'
+2017-09-29 10:03:57,358 p=3354 u=jlazaro |    3364 1506704637.35835: in local.exec_command()
+2017-09-29 10:03:57,358 p=3354 u=jlazaro |    3364 1506704637.35846: opening command with Popen()
+2017-09-29 10:03:57,360 p=3354 u=jlazaro |    3364 1506704637.36041: done running command with Popen()
+2017-09-29 10:03:57,360 p=3354 u=jlazaro |    3364 1506704637.36072: getting output with communicate()
+2017-09-29 10:03:57,363 p=3354 u=jlazaro |    3364 1506704637.36316: done communicating
+2017-09-29 10:03:57,363 p=3354 u=jlazaro |    3364 1506704637.36330: done with local.exec_command()
+2017-09-29 10:03:57,363 p=3354 u=jlazaro |    3364 1506704637.36347: _low_level_execute_command() done: rc=0, stdout=, stderr=
+2017-09-29 10:03:57,363 p=3354 u=jlazaro |    3364 1506704637.36360: _low_level_execute_command(): starting
+2017-09-29 10:03:57,363 p=3354 u=jlazaro |    3364 1506704637.36376: _low_level_execute_command(): executing: /bin/sh -c '/home/jlazaro/VENV/ansible/bin/python /home/jlazaro/.ansible/tmp/ansible-tmp-1506704637.34-81634717176805/ios_facts.py; rm -rf "/home/jlazaro/.ansible/tmp/ansible-tmp-1506704637.34-81634717176805/" > /dev/null 2>&1 && sleep 0'
+2017-09-29 10:03:57,363 p=3354 u=jlazaro |    3364 1506704637.36390: in local.exec_command()
+2017-09-29 10:03:57,364 p=3354 u=jlazaro |    3364 1506704637.36402: opening command with Popen()
+2017-09-29 10:03:57,366 p=3354 u=jlazaro |    3364 1506704637.36597: done running command with Popen()
+2017-09-29 10:03:57,366 p=3354 u=jlazaro |    3364 1506704637.36623: getting output with communicate()
+2017-09-29 10:03:57,456 p=3366 u=jlazaro |  incoming request accepted on persistent socket
+2017-09-29 10:03:57,456 p=3366 u=jlazaro |  socket operation is EXEC
+2017-09-29 10:03:57,534 p=3366 u=jlazaro |  socket operation completed with rc 0
+2017-09-29 10:03:57,534 p=3366 u=jlazaro |  incoming request accepted on persistent socket
+2017-09-29 10:03:57,534 p=3366 u=jlazaro |  socket operation is EXEC
+2017-09-29 10:03:57,916 p=3366 u=jlazaro |  socket operation completed with rc 0
+2017-09-29 10:03:57,917 p=3366 u=jlazaro |  incoming request accepted on persistent socket
+2017-09-29 10:03:57,917 p=3366 u=jlazaro |  socket operation is EXEC
+2017-09-29 10:03:57,963 p=3366 u=jlazaro |  socket operation completed with rc 0
+2017-09-29 10:03:57,964 p=3366 u=jlazaro |  incoming request accepted on persistent socket
+2017-09-29 10:03:57,964 p=3366 u=jlazaro |  socket operation is EXEC
+2017-09-29 10:03:58,018 p=3366 u=jlazaro |  socket operation completed with rc 0
+2017-09-29 10:03:58,018 p=3366 u=jlazaro |  incoming request accepted on persistent socket
+2017-09-29 10:03:58,018 p=3366 u=jlazaro |  socket operation is EXEC
+2017-09-29 10:03:58,036 p=3366 u=jlazaro |  socket operation completed with rc 0
+2017-09-29 10:03:58,036 p=3366 u=jlazaro |  incoming request accepted on persistent socket
+2017-09-29 10:03:58,036 p=3366 u=jlazaro |  socket operation is EXEC
+2017-09-29 10:03:58,048 p=3366 u=jlazaro |  socket operation completed with rc 0
+2017-09-29 10:03:58,050 p=3366 u=jlazaro |  incoming request accepted on persistent socket
+2017-09-29 10:03:58,050 p=3366 u=jlazaro |  socket operation is EXEC
+2017-09-29 10:03:58,073 p=3366 u=jlazaro |  socket operation completed with rc 0
+2017-09-29 10:03:58,084 p=3354 u=jlazaro |    3364 1506704638.08450: done communicating
+2017-09-29 10:03:58,084 p=3354 u=jlazaro |    3364 1506704638.08474: done with local.exec_command()
+2017-09-29 10:03:58,085 p=3354 u=jlazaro |    3364 1506704638.08494: _low_level_execute_command() done: rc=0, stdout=
+{"invocation": {"module_args": {"username": null, "authorize": null, "ssh_keyfile": null, "auth_pass": null, "host": null, "gather_subset": ["!config"], "timeout": null, "provider": {"username": "pyclass", "authorize": null, "ssh_keyfile": null, "auth_pass": null, "host": "cisco2.twb-tech.com", "timeout": null, "password": "VALUE_SPECIFIED_IN_NO_LOG_PARAMETER", "validate_certs": false, "port": null}, "password": null, "port": null}}, "changed": false, "ansible_facts": {"ansible_net_serialnum": "FTX18298312", "ansible_net_all_ipv4_addresses": ["10.220.88.21"], "ansible_net_model": "881 (MPC8300) processor", "ansible_net_hostname": "pynet-rtr2", "ansible_net_gather_subset": ["hardware", "default", "interfaces"], "ansible_net_interfaces": {"FastEthernet4": {"macaddress": "1c6a.7aaf.576c", "lineprotocol": "up ", "description": "*** LAN connection (don't change) ***", "duplex": null, "mediatype": null, "mtu": 1500, "operstatus": "up", "bandwidth": 100000, "ipv4": {"masklen": 24, "address": "10.220.88.21"}, "type": "PQII_PRO_UEC"}, "FastEthernet0": {"macaddress": "1c6a.7aaf.5768", "lineprotocol": "down ", "description": null, "duplex": null, "mediatype": null, "mtu": 1500, "operstatus": "down", "bandwidth": 100000, "ipv4": null, "type": "Fast Ethernet"}, "FastEthernet1": {"macaddress": "1c6a.7aaf.5769", "lineprotocol": "down ", "description": null, "duplex": null, "mediatype": null, "mtu": 1500, "operstatus": "down", "bandwidth": 100000, "ipv4": null, "type": "Fast Ethernet"}, "FastEthernet2": {"macaddress": "1c6a.7aaf.576a", "lineprotocol": "down ", "description": null, "duplex": null, "mediatype": null, "mtu": 1500, "operstatus": "down", "bandwidth": 100000, "ipv4": null, "type": "Fast Ethernet"}, "FastEthernet3": {"macaddress": "1c6a.7aaf.576b", "lineprotocol": "down ", "description": null, "duplex": null, "mediatype": null, "mtu": 1500, "operstatus": "down", "bandwidth": 100000, "ipv4": null, "type": "Fast Ethernet"}, "Vlan1": {"macaddress": "1c6a.7aaf.5768", "lineprotocol": "down ", "description": null, "duplex": null, "mediatype": null, "mtu": 1500, "operstatus": "down", "bandwidth": 100000, "ipv4": null, "type": "EtherSVI"}}, "ansible_net_version": "15.4(2)T1", "ansible_net_neighbors": {"null": [{"host": "twb-sf-hpsw1", "port": "13"}]}, "ansible_net_all_ipv6_addresses": [], "ansible_net_memtotal_mb": 124401, "ansible_net_filesystems": ["flash:"], "ansible_net_image": "flash:c880data-universalk9-mz.154-2.T1.bin", "ansible_net_memfree_mb": 77632}, "warnings": []}
+, stderr=
+2017-09-29 10:03:58,087 p=3354 u=jlazaro |    3364 1506704638.08720: done with _execute_module (ios_facts, {'_ansible_version': '2.3.1.0', '_ansible_selinux_special_fs': [u'fuse', u'nfs', u'vboxsf', u'ramfs', u'9p'], '_ansible_no_log': False, '_ansible_module_name': u'ios_facts', u'provider': {u'username': u'pyclass', 'authorize': None, 'ssh_keyfile': None, 'auth_pass': None, u'host': u'cisco2.twb-tech.com', 'timeout': None, u'password': u'88newclass', u'validate_certs': False, 'port': None}, '_ansible_verbosity': 0, '_ansible_syslog_facility': u'LOG_USER', '_ansible_socket': u'/home/jlazaro/.ansible/pc/7e16896f2b', '_ansible_diff': False, '_ansible_debug': True, '_ansible_check_mode': False})
+2017-09-29 10:03:58,087 p=3354 u=jlazaro |    3364 1506704638.08742: handler run complete
+2017-09-29 10:03:58,087 p=3354 u=jlazaro |    3364 1506704638.08760: attempt loop complete, returning result
+2017-09-29 10:03:58,087 p=3354 u=jlazaro |    3364 1506704638.08774: _execute() done
+2017-09-29 10:03:58,087 p=3354 u=jlazaro |    3364 1506704638.08785: dumping result to json
+2017-09-29 10:03:58,088 p=3354 u=jlazaro |    3364 1506704638.08810: done dumping result, returning
+2017-09-29 10:03:58,088 p=3354 u=jlazaro |    3364 1506704638.08826: done running TaskExecutor() for pynet-rtr2/TASK: CISCO GET FACTS
+2017-09-29 10:03:58,088 p=3354 u=jlazaro |    3364 1506704638.08846: sending task result
+2017-09-29 10:03:58,088 p=3354 u=jlazaro |    3364 1506704638.08887: done sending task result
+2017-09-29 10:03:58,089 p=3354 u=jlazaro |    3364 1506704638.08940: WORKER PROCESS EXITING
+2017-09-29 10:03:58,090 p=3354 u=jlazaro |  ok: [pynet-rtr2]
+2017-09-29 10:04:25,167 p=3365 u=jlazaro |  number of connection attempts exceeded, unable to connect to control socket
+2017-09-29 10:04:25,167 p=3365 u=jlazaro |  persistent_connect_interval=1, persistent_connect_retries=30
+2017-09-29 10:04:25,181 p=3354 u=jlazaro |    3363 1506704665.18110: handler run complete
+2017-09-29 10:04:25,181 p=3354 u=jlazaro |    3363 1506704665.18151: attempt loop complete, returning result
+2017-09-29 10:04:25,181 p=3354 u=jlazaro |    3363 1506704665.18168: _execute() done
+2017-09-29 10:04:25,181 p=3354 u=jlazaro |    3363 1506704665.18180: dumping result to json
+2017-09-29 10:04:25,181 p=3354 u=jlazaro |    3363 1506704665.18195: done dumping result, returning
+2017-09-29 10:04:25,182 p=3354 u=jlazaro |    3363 1506704665.18212: done running TaskExecutor() for pynet-rtr1/TASK: CISCO GET FACTS
+2017-09-29 10:04:25,182 p=3354 u=jlazaro |    3363 1506704665.18232: sending task result
+2017-09-29 10:04:25,183 p=3354 u=jlazaro |    3363 1506704665.18278: done sending task result
+2017-09-29 10:04:25,183 p=3354 u=jlazaro |    3363 1506704665.18312: WORKER PROCESS EXITING
+2017-09-29 10:04:25,184 p=3354 u=jlazaro |    3354 1506704665.18423: marking pynet-rtr1 as failed
+2017-09-29 10:04:25,184 p=3354 u=jlazaro |    3354 1506704665.18448: marking host pynet-rtr1 failed, current state: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,184 p=3354 u=jlazaro |    3354 1506704665.18462: ^ failed state is now: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_TASKS, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,184 p=3354 u=jlazaro |    3354 1506704665.18474: getting the next task for host pynet-rtr1
+2017-09-29 10:04:25,184 p=3354 u=jlazaro |    3354 1506704665.18485: host pynet-rtr1 is done iterating, returning
+2017-09-29 10:04:25,185 p=3354 u=jlazaro |  fatal: [pynet-rtr1]: FAILED! => {"changed": false, "failed": true, "msg": "unable to open shell. Please see: https://docs.ansible.com/ansible/network_debug_troubleshooting.html#unable-to-open-shell", "rc": 255}
+2017-09-29 10:04:25,185 p=3354 u=jlazaro |    3354 1506704665.18520: no more pending results, returning what we have
+2017-09-29 10:04:25,185 p=3354 u=jlazaro |    3354 1506704665.18531: results queue empty
+2017-09-29 10:04:25,185 p=3354 u=jlazaro |    3354 1506704665.18540: checking for any_errors_fatal
+2017-09-29 10:04:25,185 p=3354 u=jlazaro |    3354 1506704665.18550: done checking for any_errors_fatal
+2017-09-29 10:04:25,185 p=3354 u=jlazaro |    3354 1506704665.18560: checking for max_fail_percentage
+2017-09-29 10:04:25,185 p=3354 u=jlazaro |    3354 1506704665.18568: done checking for max_fail_percentage
+2017-09-29 10:04:25,185 p=3354 u=jlazaro |    3354 1506704665.18577: checking to see if all hosts have failed and the running result is not ok
+2017-09-29 10:04:25,185 p=3354 u=jlazaro |    3354 1506704665.18585: done checking to see if all hosts have failed
+2017-09-29 10:04:25,185 p=3354 u=jlazaro |    3354 1506704665.18593: getting the remaining hosts for this loop
+2017-09-29 10:04:25,186 p=3354 u=jlazaro |    3354 1506704665.18604: done getting the remaining hosts for this loop
+2017-09-29 10:04:25,186 p=3354 u=jlazaro |    3354 1506704665.18616: building list of next tasks for hosts
+2017-09-29 10:04:25,186 p=3354 u=jlazaro |    3354 1506704665.18625: getting the next task for host pynet-rtr1
+2017-09-29 10:04:25,186 p=3354 u=jlazaro |    3354 1506704665.18634: host pynet-rtr1 is done iterating, returning
+2017-09-29 10:04:25,186 p=3354 u=jlazaro |    3354 1506704665.18643: getting the next task for host pynet-rtr2
+2017-09-29 10:04:25,186 p=3354 u=jlazaro |    3354 1506704665.18654: done getting next task for host pynet-rtr2
+2017-09-29 10:04:25,186 p=3354 u=jlazaro |    3354 1506704665.18664:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,186 p=3354 u=jlazaro |    3354 1506704665.18676:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,186 p=3354 u=jlazaro |    3354 1506704665.18686: done building task lists
+2017-09-29 10:04:25,186 p=3354 u=jlazaro |    3354 1506704665.18694: counting tasks in each state of execution
+2017-09-29 10:04:25,187 p=3354 u=jlazaro |    3354 1506704665.18704: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 1
+	num_rescue: 0
+	num_always: 0
+2017-09-29 10:04:25,187 p=3354 u=jlazaro |    3354 1506704665.18713: advancing hosts in ITERATING_TASKS
+2017-09-29 10:04:25,187 p=3354 u=jlazaro |    3354 1506704665.18722: starting to advance hosts
+2017-09-29 10:04:25,187 p=3354 u=jlazaro |    3354 1506704665.18730: getting the next task for host pynet-rtr2
+2017-09-29 10:04:25,187 p=3354 u=jlazaro |    3354 1506704665.18741: done getting next task for host pynet-rtr2
+2017-09-29 10:04:25,187 p=3354 u=jlazaro |    3354 1506704665.18751:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,187 p=3354 u=jlazaro |    3354 1506704665.18761:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,187 p=3354 u=jlazaro |    3354 1506704665.18770: done advancing hosts to next task
+2017-09-29 10:04:25,187 p=3354 u=jlazaro |    3354 1506704665.18787: done queuing things up, now waiting for results queue to drain
+2017-09-29 10:04:25,188 p=3354 u=jlazaro |    3354 1506704665.18797: results queue empty
+2017-09-29 10:04:25,188 p=3354 u=jlazaro |    3354 1506704665.18806: checking for any_errors_fatal
+2017-09-29 10:04:25,188 p=3354 u=jlazaro |    3354 1506704665.18814: done checking for any_errors_fatal
+2017-09-29 10:04:25,188 p=3354 u=jlazaro |    3354 1506704665.18822: checking for max_fail_percentage
+2017-09-29 10:04:25,188 p=3354 u=jlazaro |    3354 1506704665.18830: done checking for max_fail_percentage
+2017-09-29 10:04:25,188 p=3354 u=jlazaro |    3354 1506704665.18839: checking to see if all hosts have failed and the running result is not ok
+2017-09-29 10:04:25,188 p=3354 u=jlazaro |    3354 1506704665.18847: done checking to see if all hosts have failed
+2017-09-29 10:04:25,188 p=3354 u=jlazaro |    3354 1506704665.18854: getting the remaining hosts for this loop
+2017-09-29 10:04:25,188 p=3354 u=jlazaro |    3354 1506704665.18864: done getting the remaining hosts for this loop
+2017-09-29 10:04:25,188 p=3354 u=jlazaro |    3354 1506704665.18875: building list of next tasks for hosts
+2017-09-29 10:04:25,188 p=3354 u=jlazaro |    3354 1506704665.18883: getting the next task for host pynet-rtr1
+2017-09-29 10:04:25,188 p=3354 u=jlazaro |    3354 1506704665.18893: host pynet-rtr1 is done iterating, returning
+2017-09-29 10:04:25,189 p=3354 u=jlazaro |    3354 1506704665.18902: getting the next task for host pynet-rtr2
+2017-09-29 10:04:25,189 p=3354 u=jlazaro |    3354 1506704665.18912: done getting next task for host pynet-rtr2
+2017-09-29 10:04:25,189 p=3354 u=jlazaro |    3354 1506704665.18922:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,189 p=3354 u=jlazaro |    3354 1506704665.18931:  ^ state is: HOST STATE: block=4, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,189 p=3354 u=jlazaro |    3354 1506704665.18940: done building task lists
+2017-09-29 10:04:25,189 p=3354 u=jlazaro |    3354 1506704665.18948: counting tasks in each state of execution
+2017-09-29 10:04:25,189 p=3354 u=jlazaro |    3354 1506704665.18957: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 1
+	num_rescue: 0
+	num_always: 0
+2017-09-29 10:04:25,189 p=3354 u=jlazaro |    3354 1506704665.18966: advancing hosts in ITERATING_TASKS
+2017-09-29 10:04:25,189 p=3354 u=jlazaro |    3354 1506704665.18974: starting to advance hosts
+2017-09-29 10:04:25,189 p=3354 u=jlazaro |    3354 1506704665.18982: getting the next task for host pynet-rtr2
+2017-09-29 10:04:25,189 p=3354 u=jlazaro |    3354 1506704665.18992: done getting next task for host pynet-rtr2
+2017-09-29 10:04:25,190 p=3354 u=jlazaro |    3354 1506704665.19002:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,190 p=3354 u=jlazaro |    3354 1506704665.19011:  ^ state is: HOST STATE: block=4, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,190 p=3354 u=jlazaro |    3354 1506704665.19020: done advancing hosts to next task
+2017-09-29 10:04:25,190 p=3354 u=jlazaro |    3354 1506704665.19033: done queuing things up, now waiting for results queue to drain
+2017-09-29 10:04:25,190 p=3354 u=jlazaro |    3354 1506704665.19043: results queue empty
+2017-09-29 10:04:25,190 p=3354 u=jlazaro |    3354 1506704665.19052: checking for any_errors_fatal
+2017-09-29 10:04:25,190 p=3354 u=jlazaro |    3354 1506704665.19060: done checking for any_errors_fatal
+2017-09-29 10:04:25,190 p=3354 u=jlazaro |    3354 1506704665.19072: checking for max_fail_percentage
+2017-09-29 10:04:25,190 p=3354 u=jlazaro |    3354 1506704665.19082: done checking for max_fail_percentage
+2017-09-29 10:04:25,190 p=3354 u=jlazaro |    3354 1506704665.19092: checking to see if all hosts have failed and the running result is not ok
+2017-09-29 10:04:25,191 p=3354 u=jlazaro |    3354 1506704665.19101: done checking to see if all hosts have failed
+2017-09-29 10:04:25,191 p=3354 u=jlazaro |    3354 1506704665.19110: getting the remaining hosts for this loop
+2017-09-29 10:04:25,191 p=3354 u=jlazaro |    3354 1506704665.19121: done getting the remaining hosts for this loop
+2017-09-29 10:04:25,191 p=3354 u=jlazaro |    3354 1506704665.19133: building list of next tasks for hosts
+2017-09-29 10:04:25,191 p=3354 u=jlazaro |    3354 1506704665.19143: getting the next task for host pynet-rtr1
+2017-09-29 10:04:25,191 p=3354 u=jlazaro |    3354 1506704665.19153: host pynet-rtr1 is done iterating, returning
+2017-09-29 10:04:25,191 p=3354 u=jlazaro |    3354 1506704665.19163: getting the next task for host pynet-rtr2
+2017-09-29 10:04:25,191 p=3354 u=jlazaro |    3354 1506704665.19175: done getting next task for host pynet-rtr2
+2017-09-29 10:04:25,191 p=3354 u=jlazaro |    3354 1506704665.19185:  ^ task is: None
+2017-09-29 10:04:25,191 p=3354 u=jlazaro |    3354 1506704665.19195:  ^ state is: HOST STATE: block=5, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,192 p=3354 u=jlazaro |    3354 1506704665.19205: done building task lists
+2017-09-29 10:04:25,192 p=3354 u=jlazaro |    3354 1506704665.19215: counting tasks in each state of execution
+2017-09-29 10:04:25,192 p=3354 u=jlazaro |    3354 1506704665.19224: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 0
+	num_rescue: 0
+	num_always: 0
+2017-09-29 10:04:25,192 p=3354 u=jlazaro |    3354 1506704665.19234: all hosts are done, so returning None's for all hosts
+2017-09-29 10:04:25,192 p=3354 u=jlazaro |    3354 1506704665.19244: done queuing things up, now waiting for results queue to drain
+2017-09-29 10:04:25,192 p=3354 u=jlazaro |    3354 1506704665.19254: results queue empty
+2017-09-29 10:04:25,192 p=3354 u=jlazaro |    3354 1506704665.19263: checking for any_errors_fatal
+2017-09-29 10:04:25,192 p=3354 u=jlazaro |    3354 1506704665.19272: done checking for any_errors_fatal
+2017-09-29 10:04:25,192 p=3354 u=jlazaro |    3354 1506704665.19282: checking for max_fail_percentage
+2017-09-29 10:04:25,192 p=3354 u=jlazaro |    3354 1506704665.19291: done checking for max_fail_percentage
+2017-09-29 10:04:25,193 p=3354 u=jlazaro |    3354 1506704665.19300: checking to see if all hosts have failed and the running result is not ok
+2017-09-29 10:04:25,193 p=3354 u=jlazaro |    3354 1506704665.19310: done checking to see if all hosts have failed
+2017-09-29 10:04:25,193 p=3354 u=jlazaro |    3354 1506704665.19321: getting the next task for host pynet-rtr1
+2017-09-29 10:04:25,193 p=3354 u=jlazaro |    3354 1506704665.19332: host pynet-rtr1 is done iterating, returning
+2017-09-29 10:04:25,193 p=3354 u=jlazaro |    3354 1506704665.19341: getting the next task for host pynet-rtr2
+2017-09-29 10:04:25,193 p=3354 u=jlazaro |    3354 1506704665.19353: done getting next task for host pynet-rtr2
+2017-09-29 10:04:25,193 p=3354 u=jlazaro |    3354 1506704665.19363:  ^ task is: None
+2017-09-29 10:04:25,193 p=3354 u=jlazaro |    3354 1506704665.19373:  ^ state is: HOST STATE: block=5, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,193 p=3354 u=jlazaro |    3354 1506704665.19384: running handlers
+2017-09-29 10:04:25,194 p=3354 u=jlazaro |    3354 1506704665.19442: in VariableManager get_vars()
+2017-09-29 10:04:25,194 p=3354 u=jlazaro |    3354 1506704665.19493: Loading FilterModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,195 p=3354 u=jlazaro |    3354 1506704665.19508: Loading FilterModule 'ipaddr' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,195 p=3354 u=jlazaro |    3354 1506704665.19521: Loading FilterModule 'json_query' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,195 p=3354 u=jlazaro |    3354 1506704665.19533: Loading FilterModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,195 p=3354 u=jlazaro |    3354 1506704665.19561: Loading TestModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,195 p=3354 u=jlazaro |    3354 1506704665.19575: Loading TestModule 'files' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,195 p=3354 u=jlazaro |    3354 1506704665.19587: Loading TestModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,197 p=3354 u=jlazaro |    3354 1506704665.19761: done with get_vars()
+2017-09-29 10:04:25,198 p=3354 u=jlazaro |    3354 1506704665.19802: in VariableManager get_vars()
+2017-09-29 10:04:25,198 p=3354 u=jlazaro |    3354 1506704665.19839: Loading FilterModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,198 p=3354 u=jlazaro |    3354 1506704665.19854: Loading FilterModule 'ipaddr' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,198 p=3354 u=jlazaro |    3354 1506704665.19866: Loading FilterModule 'json_query' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,198 p=3354 u=jlazaro |    3354 1506704665.19881: Loading FilterModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,199 p=3354 u=jlazaro |    3354 1506704665.19907: Loading TestModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,199 p=3354 u=jlazaro |    3354 1506704665.19920: Loading TestModule 'files' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,199 p=3354 u=jlazaro |    3354 1506704665.19932: Loading TestModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,200 p=3354 u=jlazaro |    3354 1506704665.19999: done with get_vars()
+2017-09-29 10:04:25,200 p=3354 u=jlazaro |  PLAY [VAULT CONFIGURATION] *****************************************************
+2017-09-29 10:04:25,201 p=3354 u=jlazaro |    3354 1506704665.20102: Loading StrategyModule 'linear' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/strategy/linear.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,202 p=3354 u=jlazaro |    3354 1506704665.20250: marking host pynet-rtr1 failed, current state: HOST STATE: block=0, task=0, rescue=0, always=0, run_state=ITERATING_SETUP, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,202 p=3354 u=jlazaro |    3354 1506704665.20266: ^ failed state is now: HOST STATE: block=0, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_SETUP, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,202 p=3354 u=jlazaro |    3354 1506704665.20281: getting the remaining hosts for this loop
+2017-09-29 10:04:25,202 p=3354 u=jlazaro |    3354 1506704665.20294: done getting the remaining hosts for this loop
+2017-09-29 10:04:25,203 p=3354 u=jlazaro |    3354 1506704665.20307: building list of next tasks for hosts
+2017-09-29 10:04:25,203 p=3354 u=jlazaro |    3354 1506704665.20319: getting the next task for host nxos1
+2017-09-29 10:04:25,203 p=3354 u=jlazaro |    3354 1506704665.20331: done getting next task for host nxos1
+2017-09-29 10:04:25,203 p=3354 u=jlazaro |    3354 1506704665.20343:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,203 p=3354 u=jlazaro |    3354 1506704665.20356:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,203 p=3354 u=jlazaro |    3354 1506704665.20368: getting the next task for host nxos2
+2017-09-29 10:04:25,203 p=3354 u=jlazaro |    3354 1506704665.20380: done getting next task for host nxos2
+2017-09-29 10:04:25,203 p=3354 u=jlazaro |    3354 1506704665.20392:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,204 p=3354 u=jlazaro |    3354 1506704665.20404:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,204 p=3354 u=jlazaro |    3354 1506704665.20416: done building task lists
+2017-09-29 10:04:25,204 p=3354 u=jlazaro |    3354 1506704665.20426: counting tasks in each state of execution
+2017-09-29 10:04:25,204 p=3354 u=jlazaro |    3354 1506704665.20436: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 2
+	num_rescue: 0
+	num_always: 0
+2017-09-29 10:04:25,204 p=3354 u=jlazaro |    3354 1506704665.20447: advancing hosts in ITERATING_TASKS
+2017-09-29 10:04:25,204 p=3354 u=jlazaro |    3354 1506704665.20457: starting to advance hosts
+2017-09-29 10:04:25,204 p=3354 u=jlazaro |    3354 1506704665.20467: getting the next task for host nxos1
+2017-09-29 10:04:25,204 p=3354 u=jlazaro |    3354 1506704665.20479: done getting next task for host nxos1
+2017-09-29 10:04:25,204 p=3354 u=jlazaro |    3354 1506704665.20490:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,205 p=3354 u=jlazaro |    3354 1506704665.20503:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,205 p=3354 u=jlazaro |    3354 1506704665.20514: getting the next task for host nxos2
+2017-09-29 10:04:25,205 p=3354 u=jlazaro |    3354 1506704665.20527: done getting next task for host nxos2
+2017-09-29 10:04:25,205 p=3354 u=jlazaro |    3354 1506704665.20538:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,205 p=3354 u=jlazaro |    3354 1506704665.20551:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,205 p=3354 u=jlazaro |    3354 1506704665.20563: done advancing hosts to next task
+2017-09-29 10:04:25,205 p=3354 u=jlazaro |    3354 1506704665.20578: done queuing things up, now waiting for results queue to drain
+2017-09-29 10:04:25,205 p=3354 u=jlazaro |    3354 1506704665.20589: results queue empty
+2017-09-29 10:04:25,206 p=3354 u=jlazaro |    3354 1506704665.20599: checking for any_errors_fatal
+2017-09-29 10:04:25,206 p=3354 u=jlazaro |    3354 1506704665.20609: done checking for any_errors_fatal
+2017-09-29 10:04:25,206 p=3354 u=jlazaro |    3354 1506704665.20619: checking for max_fail_percentage
+2017-09-29 10:04:25,206 p=3354 u=jlazaro |    3354 1506704665.20629: done checking for max_fail_percentage
+2017-09-29 10:04:25,206 p=3354 u=jlazaro |    3354 1506704665.20639: checking to see if all hosts have failed and the running result is not ok
+2017-09-29 10:04:25,206 p=3354 u=jlazaro |    3354 1506704665.20648: done checking to see if all hosts have failed
+2017-09-29 10:04:25,206 p=3354 u=jlazaro |    3354 1506704665.20658: getting the remaining hosts for this loop
+2017-09-29 10:04:25,206 p=3354 u=jlazaro |    3354 1506704665.20671: done getting the remaining hosts for this loop
+2017-09-29 10:04:25,206 p=3354 u=jlazaro |    3354 1506704665.20683: building list of next tasks for hosts
+2017-09-29 10:04:25,206 p=3354 u=jlazaro |    3354 1506704665.20693: getting the next task for host nxos1
+2017-09-29 10:04:25,207 p=3354 u=jlazaro |    3354 1506704665.20705: done getting next task for host nxos1
+2017-09-29 10:04:25,207 p=3354 u=jlazaro |    3354 1506704665.20716:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,207 p=3354 u=jlazaro |    3354 1506704665.20729:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,207 p=3354 u=jlazaro |    3354 1506704665.20740: getting the next task for host nxos2
+2017-09-29 10:04:25,207 p=3354 u=jlazaro |    3354 1506704665.20752: done getting next task for host nxos2
+2017-09-29 10:04:25,207 p=3354 u=jlazaro |    3354 1506704665.20764:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,207 p=3354 u=jlazaro |    3354 1506704665.20776:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,207 p=3354 u=jlazaro |    3354 1506704665.20787: done building task lists
+2017-09-29 10:04:25,208 p=3354 u=jlazaro |    3354 1506704665.20797: counting tasks in each state of execution
+2017-09-29 10:04:25,208 p=3354 u=jlazaro |    3354 1506704665.20807: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 2
+	num_rescue: 0
+	num_always: 0
+2017-09-29 10:04:25,208 p=3354 u=jlazaro |    3354 1506704665.20818: advancing hosts in ITERATING_TASKS
+2017-09-29 10:04:25,208 p=3354 u=jlazaro |    3354 1506704665.20828: starting to advance hosts
+2017-09-29 10:04:25,208 p=3354 u=jlazaro |    3354 1506704665.20837: getting the next task for host nxos1
+2017-09-29 10:04:25,208 p=3354 u=jlazaro |    3354 1506704665.20849: done getting next task for host nxos1
+2017-09-29 10:04:25,208 p=3354 u=jlazaro |    3354 1506704665.20860:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,208 p=3354 u=jlazaro |    3354 1506704665.20873:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,208 p=3354 u=jlazaro |    3354 1506704665.20885: getting the next task for host nxos2
+2017-09-29 10:04:25,209 p=3354 u=jlazaro |    3354 1506704665.20897: done getting next task for host nxos2
+2017-09-29 10:04:25,209 p=3354 u=jlazaro |    3354 1506704665.20909:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,209 p=3354 u=jlazaro |    3354 1506704665.20921:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,209 p=3354 u=jlazaro |    3354 1506704665.20933: done advancing hosts to next task
+2017-09-29 10:04:25,209 p=3354 u=jlazaro |    3354 1506704665.20948: done queuing things up, now waiting for results queue to drain
+2017-09-29 10:04:25,209 p=3354 u=jlazaro |    3354 1506704665.20959: results queue empty
+2017-09-29 10:04:25,209 p=3354 u=jlazaro |    3354 1506704665.20969: checking for any_errors_fatal
+2017-09-29 10:04:25,209 p=3354 u=jlazaro |    3354 1506704665.20979: done checking for any_errors_fatal
+2017-09-29 10:04:25,209 p=3354 u=jlazaro |    3354 1506704665.20988: checking for max_fail_percentage
+2017-09-29 10:04:25,210 p=3354 u=jlazaro |    3354 1506704665.20998: done checking for max_fail_percentage
+2017-09-29 10:04:25,210 p=3354 u=jlazaro |    3354 1506704665.21007: checking to see if all hosts have failed and the running result is not ok
+2017-09-29 10:04:25,210 p=3354 u=jlazaro |    3354 1506704665.21017: done checking to see if all hosts have failed
+2017-09-29 10:04:25,210 p=3354 u=jlazaro |    3354 1506704665.21026: getting the remaining hosts for this loop
+2017-09-29 10:04:25,210 p=3354 u=jlazaro |    3354 1506704665.21038: done getting the remaining hosts for this loop
+2017-09-29 10:04:25,210 p=3354 u=jlazaro |    3354 1506704665.21049: building list of next tasks for hosts
+2017-09-29 10:04:25,210 p=3354 u=jlazaro |    3354 1506704665.21060: getting the next task for host nxos1
+2017-09-29 10:04:25,210 p=3354 u=jlazaro |    3354 1506704665.21074: done getting next task for host nxos1
+2017-09-29 10:04:25,210 p=3354 u=jlazaro |    3354 1506704665.21085:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,211 p=3354 u=jlazaro |    3354 1506704665.21097:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,211 p=3354 u=jlazaro |    3354 1506704665.21109: getting the next task for host nxos2
+2017-09-29 10:04:25,211 p=3354 u=jlazaro |    3354 1506704665.21121: done getting next task for host nxos2
+2017-09-29 10:04:25,211 p=3354 u=jlazaro |    3354 1506704665.21132:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,211 p=3354 u=jlazaro |    3354 1506704665.21144:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,211 p=3354 u=jlazaro |    3354 1506704665.21156: done building task lists
+2017-09-29 10:04:25,211 p=3354 u=jlazaro |    3354 1506704665.21165: counting tasks in each state of execution
+2017-09-29 10:04:25,211 p=3354 u=jlazaro |    3354 1506704665.21176: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 2
+	num_rescue: 0
+	num_always: 0
+2017-09-29 10:04:25,211 p=3354 u=jlazaro |    3354 1506704665.21187: advancing hosts in ITERATING_TASKS
+2017-09-29 10:04:25,212 p=3354 u=jlazaro |    3354 1506704665.21196: starting to advance hosts
+2017-09-29 10:04:25,212 p=3354 u=jlazaro |    3354 1506704665.21206: getting the next task for host nxos1
+2017-09-29 10:04:25,212 p=3354 u=jlazaro |    3354 1506704665.21218: done getting next task for host nxos1
+2017-09-29 10:04:25,212 p=3354 u=jlazaro |    3354 1506704665.21229:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,212 p=3354 u=jlazaro |    3354 1506704665.21242:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,212 p=3354 u=jlazaro |    3354 1506704665.21253: getting the next task for host nxos2
+2017-09-29 10:04:25,212 p=3354 u=jlazaro |    3354 1506704665.21265: done getting next task for host nxos2
+2017-09-29 10:04:25,212 p=3354 u=jlazaro |    3354 1506704665.21276:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,212 p=3354 u=jlazaro |    3354 1506704665.21288:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,213 p=3354 u=jlazaro |    3354 1506704665.21300: done advancing hosts to next task
+2017-09-29 10:04:25,213 p=3354 u=jlazaro |    3354 1506704665.21315: done queuing things up, now waiting for results queue to drain
+2017-09-29 10:04:25,213 p=3354 u=jlazaro |    3354 1506704665.21326: results queue empty
+2017-09-29 10:04:25,213 p=3354 u=jlazaro |    3354 1506704665.21336: checking for any_errors_fatal
+2017-09-29 10:04:25,213 p=3354 u=jlazaro |    3354 1506704665.21346: done checking for any_errors_fatal
+2017-09-29 10:04:25,213 p=3354 u=jlazaro |    3354 1506704665.21356: checking for max_fail_percentage
+2017-09-29 10:04:25,213 p=3354 u=jlazaro |    3354 1506704665.21366: done checking for max_fail_percentage
+2017-09-29 10:04:25,213 p=3354 u=jlazaro |    3354 1506704665.21375: checking to see if all hosts have failed and the running result is not ok
+2017-09-29 10:04:25,213 p=3354 u=jlazaro |    3354 1506704665.21385: done checking to see if all hosts have failed
+2017-09-29 10:04:25,213 p=3354 u=jlazaro |    3354 1506704665.21394: getting the remaining hosts for this loop
+2017-09-29 10:04:25,214 p=3354 u=jlazaro |    3354 1506704665.21406: done getting the remaining hosts for this loop
+2017-09-29 10:04:25,214 p=3354 u=jlazaro |    3354 1506704665.21417: building list of next tasks for hosts
+2017-09-29 10:04:25,214 p=3354 u=jlazaro |    3354 1506704665.21427: getting the next task for host nxos1
+2017-09-29 10:04:25,214 p=3354 u=jlazaro |    3354 1506704665.21439: done getting next task for host nxos1
+2017-09-29 10:04:25,214 p=3354 u=jlazaro |    3354 1506704665.21449:  ^ task is: None
+2017-09-29 10:04:25,214 p=3354 u=jlazaro |    3354 1506704665.21460:  ^ state is: HOST STATE: block=4, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,214 p=3354 u=jlazaro |    3354 1506704665.21473: getting the next task for host nxos2
+2017-09-29 10:04:25,214 p=3354 u=jlazaro |    3354 1506704665.21485: done getting next task for host nxos2
+2017-09-29 10:04:25,214 p=3354 u=jlazaro |    3354 1506704665.21495:  ^ task is: None
+2017-09-29 10:04:25,215 p=3354 u=jlazaro |    3354 1506704665.21506:  ^ state is: HOST STATE: block=4, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,215 p=3354 u=jlazaro |    3354 1506704665.21516: done building task lists
+2017-09-29 10:04:25,215 p=3354 u=jlazaro |    3354 1506704665.21525: counting tasks in each state of execution
+2017-09-29 10:04:25,215 p=3354 u=jlazaro |    3354 1506704665.21535: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 0
+	num_rescue: 0
+	num_always: 0
+2017-09-29 10:04:25,215 p=3354 u=jlazaro |    3354 1506704665.21546: all hosts are done, so returning None's for all hosts
+2017-09-29 10:04:25,215 p=3354 u=jlazaro |    3354 1506704665.21556: done queuing things up, now waiting for results queue to drain
+2017-09-29 10:04:25,215 p=3354 u=jlazaro |    3354 1506704665.21567: results queue empty
+2017-09-29 10:04:25,215 p=3354 u=jlazaro |    3354 1506704665.21576: checking for any_errors_fatal
+2017-09-29 10:04:25,215 p=3354 u=jlazaro |    3354 1506704665.21586: done checking for any_errors_fatal
+2017-09-29 10:04:25,216 p=3354 u=jlazaro |    3354 1506704665.21596: checking for max_fail_percentage
+2017-09-29 10:04:25,216 p=3354 u=jlazaro |    3354 1506704665.21605: done checking for max_fail_percentage
+2017-09-29 10:04:25,216 p=3354 u=jlazaro |    3354 1506704665.21615: checking to see if all hosts have failed and the running result is not ok
+2017-09-29 10:04:25,216 p=3354 u=jlazaro |    3354 1506704665.21624: done checking to see if all hosts have failed
+2017-09-29 10:04:25,216 p=3354 u=jlazaro |    3354 1506704665.21636: getting the next task for host nxos1
+2017-09-29 10:04:25,216 p=3354 u=jlazaro |    3354 1506704665.21649: done getting next task for host nxos1
+2017-09-29 10:04:25,216 p=3354 u=jlazaro |    3354 1506704665.21658:  ^ task is: None
+2017-09-29 10:04:25,216 p=3354 u=jlazaro |    3354 1506704665.21669:  ^ state is: HOST STATE: block=4, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,216 p=3354 u=jlazaro |    3354 1506704665.21679: getting the next task for host nxos2
+2017-09-29 10:04:25,216 p=3354 u=jlazaro |    3354 1506704665.21691: done getting next task for host nxos2
+2017-09-29 10:04:25,217 p=3354 u=jlazaro |    3354 1506704665.21701:  ^ task is: None
+2017-09-29 10:04:25,217 p=3354 u=jlazaro |    3354 1506704665.21711:  ^ state is: HOST STATE: block=4, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,217 p=3354 u=jlazaro |    3354 1506704665.21722: running handlers
+2017-09-29 10:04:25,217 p=3354 u=jlazaro |    3354 1506704665.21757: in VariableManager get_vars()
+2017-09-29 10:04:25,218 p=3354 u=jlazaro |    3354 1506704665.21794: Loading FilterModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,218 p=3354 u=jlazaro |    3354 1506704665.21810: Loading FilterModule 'ipaddr' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,218 p=3354 u=jlazaro |    3354 1506704665.21825: Loading FilterModule 'json_query' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,218 p=3354 u=jlazaro |    3354 1506704665.21837: Loading FilterModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,218 p=3354 u=jlazaro |    3354 1506704665.21887: Loading TestModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,219 p=3354 u=jlazaro |    3354 1506704665.21902: Loading TestModule 'files' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,219 p=3354 u=jlazaro |    3354 1506704665.21915: Loading TestModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,220 p=3354 u=jlazaro |    3354 1506704665.22015: done with get_vars()
+2017-09-29 10:04:25,220 p=3354 u=jlazaro |    3354 1506704665.22053: in VariableManager get_vars()
+2017-09-29 10:04:25,220 p=3354 u=jlazaro |    3354 1506704665.22089: Loading FilterModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,221 p=3354 u=jlazaro |    3354 1506704665.22103: Loading FilterModule 'ipaddr' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,221 p=3354 u=jlazaro |    3354 1506704665.22115: Loading FilterModule 'json_query' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,221 p=3354 u=jlazaro |    3354 1506704665.22127: Loading FilterModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,221 p=3354 u=jlazaro |    3354 1506704665.22152: Loading TestModule 'core' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,221 p=3354 u=jlazaro |    3354 1506704665.22165: Loading TestModule 'files' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,221 p=3354 u=jlazaro |    3354 1506704665.22177: Loading TestModule 'mathstuff' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,222 p=3354 u=jlazaro |    3354 1506704665.22242: done with get_vars()
+2017-09-29 10:04:25,223 p=3354 u=jlazaro |  PLAY [VAULT CONFIGURATION] *****************************************************
+2017-09-29 10:04:25,223 p=3354 u=jlazaro |    3354 1506704665.22368: Loading StrategyModule 'linear' from /home/jlazaro/VENV/py27_venv/local/lib/python2.7/site-packages/ansible/plugins/strategy/linear.py (found_in_cache=True, class_only=False)
+2017-09-29 10:04:25,225 p=3354 u=jlazaro |    3354 1506704665.22499: marking host pynet-rtr1 failed, current state: HOST STATE: block=0, task=0, rescue=0, always=0, run_state=ITERATING_SETUP, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,225 p=3354 u=jlazaro |    3354 1506704665.22514: ^ failed state is now: HOST STATE: block=0, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_SETUP, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,225 p=3354 u=jlazaro |    3354 1506704665.22527: getting the remaining hosts for this loop
+2017-09-29 10:04:25,225 p=3354 u=jlazaro |    3354 1506704665.22539: done getting the remaining hosts for this loop
+2017-09-29 10:04:25,225 p=3354 u=jlazaro |    3354 1506704665.22552: building list of next tasks for hosts
+2017-09-29 10:04:25,225 p=3354 u=jlazaro |    3354 1506704665.22563: getting the next task for host pynet-sw5
+2017-09-29 10:04:25,225 p=3354 u=jlazaro |    3354 1506704665.22575: done getting next task for host pynet-sw5
+2017-09-29 10:04:25,225 p=3354 u=jlazaro |    3354 1506704665.22586:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,226 p=3354 u=jlazaro |    3354 1506704665.22598:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,226 p=3354 u=jlazaro |    3354 1506704665.22610: getting the next task for host pynet-sw6
+2017-09-29 10:04:25,226 p=3354 u=jlazaro |    3354 1506704665.22622: done getting next task for host pynet-sw6
+2017-09-29 10:04:25,226 p=3354 u=jlazaro |    3354 1506704665.22633:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,226 p=3354 u=jlazaro |    3354 1506704665.22644:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,226 p=3354 u=jlazaro |    3354 1506704665.22654: getting the next task for host pynet-sw7
+2017-09-29 10:04:25,226 p=3354 u=jlazaro |    3354 1506704665.22666: done getting next task for host pynet-sw7
+2017-09-29 10:04:25,226 p=3354 u=jlazaro |    3354 1506704665.22679:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,226 p=3354 u=jlazaro |    3354 1506704665.22689:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,227 p=3354 u=jlazaro |    3354 1506704665.22700: getting the next task for host pynet-sw8
+2017-09-29 10:04:25,227 p=3354 u=jlazaro |    3354 1506704665.22711: done getting next task for host pynet-sw8
+2017-09-29 10:04:25,227 p=3354 u=jlazaro |    3354 1506704665.22722:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,227 p=3354 u=jlazaro |    3354 1506704665.22733:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,227 p=3354 u=jlazaro |    3354 1506704665.22743: done building task lists
+2017-09-29 10:04:25,227 p=3354 u=jlazaro |    3354 1506704665.22753: counting tasks in each state of execution
+2017-09-29 10:04:25,227 p=3354 u=jlazaro |    3354 1506704665.22763: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 4
+	num_rescue: 0
+	num_always: 0
+2017-09-29 10:04:25,227 p=3354 u=jlazaro |    3354 1506704665.22774: advancing hosts in ITERATING_TASKS
+2017-09-29 10:04:25,227 p=3354 u=jlazaro |    3354 1506704665.22784: starting to advance hosts
+2017-09-29 10:04:25,227 p=3354 u=jlazaro |    3354 1506704665.22794: getting the next task for host pynet-sw5
+2017-09-29 10:04:25,228 p=3354 u=jlazaro |    3354 1506704665.22806: done getting next task for host pynet-sw5
+2017-09-29 10:04:25,228 p=3354 u=jlazaro |    3354 1506704665.22817:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,228 p=3354 u=jlazaro |    3354 1506704665.22827:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,228 p=3354 u=jlazaro |    3354 1506704665.22837: getting the next task for host pynet-sw6
+2017-09-29 10:04:25,228 p=3354 u=jlazaro |    3354 1506704665.22849: done getting next task for host pynet-sw6
+2017-09-29 10:04:25,228 p=3354 u=jlazaro |    3354 1506704665.22860:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,228 p=3354 u=jlazaro |    3354 1506704665.22870:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,228 p=3354 u=jlazaro |    3354 1506704665.22884: getting the next task for host pynet-sw7
+2017-09-29 10:04:25,229 p=3354 u=jlazaro |    3354 1506704665.22899: done getting next task for host pynet-sw7
+2017-09-29 10:04:25,229 p=3354 u=jlazaro |    3354 1506704665.22911:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,229 p=3354 u=jlazaro |    3354 1506704665.22924:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,229 p=3354 u=jlazaro |    3354 1506704665.22935: getting the next task for host pynet-sw8
+2017-09-29 10:04:25,229 p=3354 u=jlazaro |    3354 1506704665.22946: done getting next task for host pynet-sw8
+2017-09-29 10:04:25,229 p=3354 u=jlazaro |    3354 1506704665.22957:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,229 p=3354 u=jlazaro |    3354 1506704665.22968:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,229 p=3354 u=jlazaro |    3354 1506704665.22978: done advancing hosts to next task
+2017-09-29 10:04:25,229 p=3354 u=jlazaro |    3354 1506704665.22992: done queuing things up, now waiting for results queue to drain
+2017-09-29 10:04:25,230 p=3354 u=jlazaro |    3354 1506704665.23004: results queue empty
+2017-09-29 10:04:25,230 p=3354 u=jlazaro |    3354 1506704665.23013: checking for any_errors_fatal
+2017-09-29 10:04:25,230 p=3354 u=jlazaro |    3354 1506704665.23024: done checking for any_errors_fatal
+2017-09-29 10:04:25,230 p=3354 u=jlazaro |    3354 1506704665.23033: checking for max_fail_percentage
+2017-09-29 10:04:25,230 p=3354 u=jlazaro |    3354 1506704665.23043: done checking for max_fail_percentage
+2017-09-29 10:04:25,230 p=3354 u=jlazaro |    3354 1506704665.23052: checking to see if all hosts have failed and the running result is not ok
+2017-09-29 10:04:25,230 p=3354 u=jlazaro |    3354 1506704665.23062: done checking to see if all hosts have failed
+2017-09-29 10:04:25,230 p=3354 u=jlazaro |    3354 1506704665.23073: getting the remaining hosts for this loop
+2017-09-29 10:04:25,230 p=3354 u=jlazaro |    3354 1506704665.23085: done getting the remaining hosts for this loop
+2017-09-29 10:04:25,231 p=3354 u=jlazaro |    3354 1506704665.23096: building list of next tasks for hosts
+2017-09-29 10:04:25,231 p=3354 u=jlazaro |    3354 1506704665.23106: getting the next task for host pynet-sw5
+2017-09-29 10:04:25,231 p=3354 u=jlazaro |    3354 1506704665.23118: done getting next task for host pynet-sw5
+2017-09-29 10:04:25,231 p=3354 u=jlazaro |    3354 1506704665.23129:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,231 p=3354 u=jlazaro |    3354 1506704665.23139:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,231 p=3354 u=jlazaro |    3354 1506704665.23149: getting the next task for host pynet-sw6
+2017-09-29 10:04:25,231 p=3354 u=jlazaro |    3354 1506704665.23161: done getting next task for host pynet-sw6
+2017-09-29 10:04:25,231 p=3354 u=jlazaro |    3354 1506704665.23172:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,231 p=3354 u=jlazaro |    3354 1506704665.23182:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,231 p=3354 u=jlazaro |    3354 1506704665.23193: getting the next task for host pynet-sw7
+2017-09-29 10:04:25,232 p=3354 u=jlazaro |    3354 1506704665.23204: done getting next task for host pynet-sw7
+2017-09-29 10:04:25,232 p=3354 u=jlazaro |    3354 1506704665.23215:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,232 p=3354 u=jlazaro |    3354 1506704665.23226:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,232 p=3354 u=jlazaro |    3354 1506704665.23237: getting the next task for host pynet-sw8
+2017-09-29 10:04:25,232 p=3354 u=jlazaro |    3354 1506704665.23248: done getting next task for host pynet-sw8
+2017-09-29 10:04:25,232 p=3354 u=jlazaro |    3354 1506704665.23259:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,232 p=3354 u=jlazaro |    3354 1506704665.23270:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,232 p=3354 u=jlazaro |    3354 1506704665.23280: done building task lists
+2017-09-29 10:04:25,232 p=3354 u=jlazaro |    3354 1506704665.23289: counting tasks in each state of execution
+2017-09-29 10:04:25,233 p=3354 u=jlazaro |    3354 1506704665.23299: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 4
+	num_rescue: 0
+	num_always: 0
+2017-09-29 10:04:25,233 p=3354 u=jlazaro |    3354 1506704665.23310: advancing hosts in ITERATING_TASKS
+2017-09-29 10:04:25,233 p=3354 u=jlazaro |    3354 1506704665.23320: starting to advance hosts
+2017-09-29 10:04:25,233 p=3354 u=jlazaro |    3354 1506704665.23330: getting the next task for host pynet-sw5
+2017-09-29 10:04:25,233 p=3354 u=jlazaro |    3354 1506704665.23341: done getting next task for host pynet-sw5
+2017-09-29 10:04:25,233 p=3354 u=jlazaro |    3354 1506704665.23352:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,233 p=3354 u=jlazaro |    3354 1506704665.23362:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,233 p=3354 u=jlazaro |    3354 1506704665.23373: getting the next task for host pynet-sw6
+2017-09-29 10:04:25,233 p=3354 u=jlazaro |    3354 1506704665.23385: done getting next task for host pynet-sw6
+2017-09-29 10:04:25,233 p=3354 u=jlazaro |    3354 1506704665.23395:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,234 p=3354 u=jlazaro |    3354 1506704665.23406:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,234 p=3354 u=jlazaro |    3354 1506704665.23416: getting the next task for host pynet-sw7
+2017-09-29 10:04:25,234 p=3354 u=jlazaro |    3354 1506704665.23428: done getting next task for host pynet-sw7
+2017-09-29 10:04:25,234 p=3354 u=jlazaro |    3354 1506704665.23438:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,234 p=3354 u=jlazaro |    3354 1506704665.23449:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,234 p=3354 u=jlazaro |    3354 1506704665.23460: getting the next task for host pynet-sw8
+2017-09-29 10:04:25,234 p=3354 u=jlazaro |    3354 1506704665.23473: done getting next task for host pynet-sw8
+2017-09-29 10:04:25,234 p=3354 u=jlazaro |    3354 1506704665.23484:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,234 p=3354 u=jlazaro |    3354 1506704665.23494:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,235 p=3354 u=jlazaro |    3354 1506704665.23505: done advancing hosts to next task
+2017-09-29 10:04:25,235 p=3354 u=jlazaro |    3354 1506704665.23520: done queuing things up, now waiting for results queue to drain
+2017-09-29 10:04:25,235 p=3354 u=jlazaro |    3354 1506704665.23531: results queue empty
+2017-09-29 10:04:25,235 p=3354 u=jlazaro |    3354 1506704665.23541: checking for any_errors_fatal
+2017-09-29 10:04:25,235 p=3354 u=jlazaro |    3354 1506704665.23551: done checking for any_errors_fatal
+2017-09-29 10:04:25,235 p=3354 u=jlazaro |    3354 1506704665.23560: checking for max_fail_percentage
+2017-09-29 10:04:25,235 p=3354 u=jlazaro |    3354 1506704665.23569: done checking for max_fail_percentage
+2017-09-29 10:04:25,235 p=3354 u=jlazaro |    3354 1506704665.23579: checking to see if all hosts have failed and the running result is not ok
+2017-09-29 10:04:25,235 p=3354 u=jlazaro |    3354 1506704665.23589: done checking to see if all hosts have failed
+2017-09-29 10:04:25,236 p=3354 u=jlazaro |    3354 1506704665.23598: getting the remaining hosts for this loop
+2017-09-29 10:04:25,236 p=3354 u=jlazaro |    3354 1506704665.23610: done getting the remaining hosts for this loop
+2017-09-29 10:04:25,236 p=3354 u=jlazaro |    3354 1506704665.23622: building list of next tasks for hosts
+2017-09-29 10:04:25,236 p=3354 u=jlazaro |    3354 1506704665.23632: getting the next task for host pynet-sw5
+2017-09-29 10:04:25,236 p=3354 u=jlazaro |    3354 1506704665.23643: done getting next task for host pynet-sw5
+2017-09-29 10:04:25,236 p=3354 u=jlazaro |    3354 1506704665.23654:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,236 p=3354 u=jlazaro |    3354 1506704665.23665:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,236 p=3354 u=jlazaro |    3354 1506704665.23675: getting the next task for host pynet-sw6
+2017-09-29 10:04:25,236 p=3354 u=jlazaro |    3354 1506704665.23687: done getting next task for host pynet-sw6
+2017-09-29 10:04:25,237 p=3354 u=jlazaro |    3354 1506704665.23697:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,237 p=3354 u=jlazaro |    3354 1506704665.23708:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,237 p=3354 u=jlazaro |    3354 1506704665.23719: getting the next task for host pynet-sw7
+2017-09-29 10:04:25,237 p=3354 u=jlazaro |    3354 1506704665.23730: done getting next task for host pynet-sw7
+2017-09-29 10:04:25,237 p=3354 u=jlazaro |    3354 1506704665.23741:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,237 p=3354 u=jlazaro |    3354 1506704665.23751:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,237 p=3354 u=jlazaro |    3354 1506704665.23762: getting the next task for host pynet-sw8
+2017-09-29 10:04:25,237 p=3354 u=jlazaro |    3354 1506704665.23773: done getting next task for host pynet-sw8
+2017-09-29 10:04:25,237 p=3354 u=jlazaro |    3354 1506704665.23784:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,237 p=3354 u=jlazaro |    3354 1506704665.23794:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,238 p=3354 u=jlazaro |    3354 1506704665.23805: done building task lists
+2017-09-29 10:04:25,238 p=3354 u=jlazaro |    3354 1506704665.23814: counting tasks in each state of execution
+2017-09-29 10:04:25,238 p=3354 u=jlazaro |    3354 1506704665.23825: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 4
+	num_rescue: 0
+	num_always: 0
+2017-09-29 10:04:25,238 p=3354 u=jlazaro |    3354 1506704665.23835: advancing hosts in ITERATING_TASKS
+2017-09-29 10:04:25,238 p=3354 u=jlazaro |    3354 1506704665.23845: starting to advance hosts
+2017-09-29 10:04:25,238 p=3354 u=jlazaro |    3354 1506704665.23855: getting the next task for host pynet-sw5
+2017-09-29 10:04:25,238 p=3354 u=jlazaro |    3354 1506704665.23867: done getting next task for host pynet-sw5
+2017-09-29 10:04:25,238 p=3354 u=jlazaro |    3354 1506704665.23880:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,238 p=3354 u=jlazaro |    3354 1506704665.23890:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,239 p=3354 u=jlazaro |    3354 1506704665.23901: getting the next task for host pynet-sw6
+2017-09-29 10:04:25,239 p=3354 u=jlazaro |    3354 1506704665.23913: done getting next task for host pynet-sw6
+2017-09-29 10:04:25,239 p=3354 u=jlazaro |    3354 1506704665.23923:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,239 p=3354 u=jlazaro |    3354 1506704665.23934:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,239 p=3354 u=jlazaro |    3354 1506704665.23944: getting the next task for host pynet-sw7
+2017-09-29 10:04:25,239 p=3354 u=jlazaro |    3354 1506704665.23956: done getting next task for host pynet-sw7
+2017-09-29 10:04:25,239 p=3354 u=jlazaro |    3354 1506704665.23967:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,239 p=3354 u=jlazaro |    3354 1506704665.23977:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,239 p=3354 u=jlazaro |    3354 1506704665.23987: getting the next task for host pynet-sw8
+2017-09-29 10:04:25,240 p=3354 u=jlazaro |    3354 1506704665.23999: done getting next task for host pynet-sw8
+2017-09-29 10:04:25,240 p=3354 u=jlazaro |    3354 1506704665.24010:  ^ task is: TASK: meta (flush_handlers)
+2017-09-29 10:04:25,240 p=3354 u=jlazaro |    3354 1506704665.24021:  ^ state is: HOST STATE: block=3, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,240 p=3354 u=jlazaro |    3354 1506704665.24031: done advancing hosts to next task
+2017-09-29 10:04:25,240 p=3354 u=jlazaro |    3354 1506704665.24045: done queuing things up, now waiting for results queue to drain
+2017-09-29 10:04:25,240 p=3354 u=jlazaro |    3354 1506704665.24057: results queue empty
+2017-09-29 10:04:25,240 p=3354 u=jlazaro |    3354 1506704665.24066: checking for any_errors_fatal
+2017-09-29 10:04:25,240 p=3354 u=jlazaro |    3354 1506704665.24076: done checking for any_errors_fatal
+2017-09-29 10:04:25,240 p=3354 u=jlazaro |    3354 1506704665.24086: checking for max_fail_percentage
+2017-09-29 10:04:25,240 p=3354 u=jlazaro |    3354 1506704665.24095: done checking for max_fail_percentage
+2017-09-29 10:04:25,241 p=3354 u=jlazaro |    3354 1506704665.24104: checking to see if all hosts have failed and the running result is not ok
+2017-09-29 10:04:25,241 p=3354 u=jlazaro |    3354 1506704665.24114: done checking to see if all hosts have failed
+2017-09-29 10:04:25,241 p=3354 u=jlazaro |    3354 1506704665.24124: getting the remaining hosts for this loop
+2017-09-29 10:04:25,241 p=3354 u=jlazaro |    3354 1506704665.24136: done getting the remaining hosts for this loop
+2017-09-29 10:04:25,241 p=3354 u=jlazaro |    3354 1506704665.24147: building list of next tasks for hosts
+2017-09-29 10:04:25,241 p=3354 u=jlazaro |    3354 1506704665.24158: getting the next task for host pynet-sw5
+2017-09-29 10:04:25,241 p=3354 u=jlazaro |    3354 1506704665.24169: done getting next task for host pynet-sw5
+2017-09-29 10:04:25,241 p=3354 u=jlazaro |    3354 1506704665.24179:  ^ task is: None
+2017-09-29 10:04:25,241 p=3354 u=jlazaro |    3354 1506704665.24190:  ^ state is: HOST STATE: block=4, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,242 p=3354 u=jlazaro |    3354 1506704665.24200: getting the next task for host pynet-sw6
+2017-09-29 10:04:25,242 p=3354 u=jlazaro |    3354 1506704665.24212: done getting next task for host pynet-sw6
+2017-09-29 10:04:25,242 p=3354 u=jlazaro |    3354 1506704665.24221:  ^ task is: None
+2017-09-29 10:04:25,242 p=3354 u=jlazaro |    3354 1506704665.24232:  ^ state is: HOST STATE: block=4, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,242 p=3354 u=jlazaro |    3354 1506704665.24242: getting the next task for host pynet-sw7
+2017-09-29 10:04:25,242 p=3354 u=jlazaro |    3354 1506704665.24254: done getting next task for host pynet-sw7
+2017-09-29 10:04:25,242 p=3354 u=jlazaro |    3354 1506704665.24263:  ^ task is: None
+2017-09-29 10:04:25,242 p=3354 u=jlazaro |    3354 1506704665.24276:  ^ state is: HOST STATE: block=4, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,242 p=3354 u=jlazaro |    3354 1506704665.24286: getting the next task for host pynet-sw8
+2017-09-29 10:04:25,243 p=3354 u=jlazaro |    3354 1506704665.24298: done getting next task for host pynet-sw8
+2017-09-29 10:04:25,243 p=3354 u=jlazaro |    3354 1506704665.24308:  ^ task is: None
+2017-09-29 10:04:25,243 p=3354 u=jlazaro |    3354 1506704665.24318:  ^ state is: HOST STATE: block=4, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,243 p=3354 u=jlazaro |    3354 1506704665.24328: done building task lists
+2017-09-29 10:04:25,243 p=3354 u=jlazaro |    3354 1506704665.24338: counting tasks in each state of execution
+2017-09-29 10:04:25,243 p=3354 u=jlazaro |    3354 1506704665.24347: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 0
+	num_rescue: 0
+	num_always: 0
+2017-09-29 10:04:25,243 p=3354 u=jlazaro |    3354 1506704665.24358: all hosts are done, so returning None's for all hosts
+2017-09-29 10:04:25,243 p=3354 u=jlazaro |    3354 1506704665.24368: done queuing things up, now waiting for results queue to drain
+2017-09-29 10:04:25,243 p=3354 u=jlazaro |    3354 1506704665.24378: results queue empty
+2017-09-29 10:04:25,243 p=3354 u=jlazaro |    3354 1506704665.24387: checking for any_errors_fatal
+2017-09-29 10:04:25,244 p=3354 u=jlazaro |    3354 1506704665.24397: done checking for any_errors_fatal
+2017-09-29 10:04:25,244 p=3354 u=jlazaro |    3354 1506704665.24406: checking for max_fail_percentage
+2017-09-29 10:04:25,244 p=3354 u=jlazaro |    3354 1506704665.24416: done checking for max_fail_percentage
+2017-09-29 10:04:25,244 p=3354 u=jlazaro |    3354 1506704665.24427: checking to see if all hosts have failed and the running result is not ok
+2017-09-29 10:04:25,244 p=3354 u=jlazaro |    3354 1506704665.24436: done checking to see if all hosts have failed
+2017-09-29 10:04:25,244 p=3354 u=jlazaro |    3354 1506704665.24448: getting the next task for host pynet-sw5
+2017-09-29 10:04:25,244 p=3354 u=jlazaro |    3354 1506704665.24460: done getting next task for host pynet-sw5
+2017-09-29 10:04:25,244 p=3354 u=jlazaro |    3354 1506704665.24470:  ^ task is: None
+2017-09-29 10:04:25,244 p=3354 u=jlazaro |    3354 1506704665.24481:  ^ state is: HOST STATE: block=4, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,244 p=3354 u=jlazaro |    3354 1506704665.24491: getting the next task for host pynet-sw6
+2017-09-29 10:04:25,245 p=3354 u=jlazaro |    3354 1506704665.24503: done getting next task for host pynet-sw6
+2017-09-29 10:04:25,245 p=3354 u=jlazaro |    3354 1506704665.24513:  ^ task is: None
+2017-09-29 10:04:25,245 p=3354 u=jlazaro |    3354 1506704665.24523:  ^ state is: HOST STATE: block=4, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,245 p=3354 u=jlazaro |    3354 1506704665.24534: getting the next task for host pynet-sw7
+2017-09-29 10:04:25,245 p=3354 u=jlazaro |    3354 1506704665.24546: done getting next task for host pynet-sw7
+2017-09-29 10:04:25,245 p=3354 u=jlazaro |    3354 1506704665.24556:  ^ task is: None
+2017-09-29 10:04:25,245 p=3354 u=jlazaro |    3354 1506704665.24566:  ^ state is: HOST STATE: block=4, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,245 p=3354 u=jlazaro |    3354 1506704665.24576: getting the next task for host pynet-sw8
+2017-09-29 10:04:25,245 p=3354 u=jlazaro |    3354 1506704665.24588: done getting next task for host pynet-sw8
+2017-09-29 10:04:25,246 p=3354 u=jlazaro |    3354 1506704665.24598:  ^ task is: None
+2017-09-29 10:04:25,246 p=3354 u=jlazaro |    3354 1506704665.24608:  ^ state is: HOST STATE: block=4, task=0, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+2017-09-29 10:04:25,246 p=3354 u=jlazaro |    3354 1506704665.24619: running handlers
+2017-09-29 10:04:25,246 p=3354 u=jlazaro |  	to retry, use: --limit @/home/jlazaro/vault_ex1.retry
+
+2017-09-29 10:04:25,246 p=3354 u=jlazaro |  PLAY RECAP *********************************************************************
+2017-09-29 10:04:25,247 p=3354 u=jlazaro |  pynet-rtr1                 : ok=0    changed=0    unreachable=0    failed=1   
+2017-09-29 10:04:25,247 p=3354 u=jlazaro |  pynet-rtr2                 : ok=1    changed=0    unreachable=0    failed=0   
+2017-09-29 10:04:25,247 p=3354 u=jlazaro |    3354 1506704665.24727: RUNNING CLEANUP
+2017-09-29 10:04:28,074 p=3366 u=jlazaro |  closing shell due to sigalarm
+2017-09-29 10:04:28,074 p=3366 u=jlazaro |  closing shell on device
+2017-09-29 10:04:28,074 p=3366 u=jlazaro |  shutting down control socket, connection was active for 0:00:32.903715 secs
+2017-09-29 10:04:28,074 p=3366 u=jlazaro |  closing connection
+2017-09-29 10:04:28,074 p=3366 u=jlazaro |  closing shell on device

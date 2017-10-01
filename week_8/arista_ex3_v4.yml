@@ -1,0 +1,42 @@
+---
+- name: ARISTA CONFIGURATION VALIDATION
+  hosts: pynet-sw7
+  tasks:
+    - name: pynet-sw7 Configuration Generation
+      template:
+        src: "./templates/five_vlans_ex3.j2"
+        dest: "./CFGS/{{ inventory_hostname }}.cfg"
+    - name: pynet-sw7 Load New Configuration
+      napalm_install_config:
+        provider: "{{ credenciales }}"
+        config_file: "./CFGS/{{ inventory_hostname }}.cfg"
+        commit_changes: True
+        replace_config: False
+        diff_file: "./DIFFS/{{ inventory_hostname }}-diff.txt"
+    - name: pynet-sw7 Get Configuration Applied
+      eos_command:
+        provider: "{{ creds_eapi }}"
+        commands:
+          - show vlan
+      register: all_output
+    - name: pynet-sw7 Get Only Vlan ID
+      set_fact:
+        only_vlanId: "{{ all_output.stdout_lines[0].vlans }}"
+    - name: Crea lista con Vlan ID configuradas
+      set_fact:
+        vlan_list: "{{ vlan_list | default([]) + [item] }}"
+      with_items: "{{ only_vlanId.keys() }}"
+    - debug:
+        msg: "{{ item }}"
+      with_items: "{{ vlan_list }}"
+    - name: Crea lista con Vlan ID que se deben configurar
+      set_fact:
+        vlan_list_mustbe: "{{ vlans_list | map(attribute='vlan_id') | list }}"
+    - name: Compara listas de VLAN configuradas y must_be
+      set_fact:
+        vlan_diff: "{{ vlan_list_mustbe | symmetric_difference(vlan_list) | list }}"
+    - name: Muestra mensaje si hay diferencias entre listas
+      assert:
+        that:
+          - "vlan_diff != []"
+        msg: "Configuracion incorrecta {{ vlan_diff }}"

@@ -1,0 +1,29 @@
+---
+- name: ARISTA CONFIGURATION VALIDATION
+  hosts: pynet-sw7
+  tasks:
+    - name: pynet-sw7 Configuration Generation
+      template:
+        src: "./templates/five_vlans_ex3.j2"
+        dest: "./CFGS/{{ inventory_hostname }}.cfg"
+    - name: pynet-sw7 Load New Configuration
+      napalm_install_config:
+        provider: "{{ credenciales }}"
+        config_file: "./CFGS/{{ inventory_hostname }}.cfg"
+        commit_changes: True
+        replace_config: False
+        diff_file: "./DIFFS/{{ inventory_hostname }}-diff.txt"
+    - name: pynet-sw7 Get Configuration Applied
+      eos_command:
+        provider: "{{ creds_eapi }}"
+        commands:
+          - show vlan
+      register: all_output
+    - name: pynet-sw7 Get Only Vlan ID
+      set_fact:
+        only_vlanId: "{{ all_output.stdout_lines[0].vlans.keys() }}"
+    - debug:
+        msg: "Vlan {{ item }} no configurada por administrador"
+      when: "'{{ item }}' not in only_vlanId"
+      with_items: "{{ only_vlanId }}"
+

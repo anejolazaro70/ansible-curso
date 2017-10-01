@@ -1,0 +1,29 @@
+---
+vlans_id:
+  - 1
+  - 100
+  - 200
+  - 300
+#  - 400
+
+vlans_name:
+  - vlan100
+  - vlan200
+  - vlan300
+  - vlan400
+
+vlansId:
+  - "vlan {{ vlans_id }}"
+
+vlansName:
+  - "name {{ vlans_name }}"
+
+vlans_list:
+  - vlan_id: 100
+    vlan_name: Vlan_100
+  - vlan_id: 200
+    vlan_name: Vlan_200
+  - vlan_id: 300
+    vlan_name: Vlan_300
+  - vlan_id: 400
+    vlan_name: Vlan_400

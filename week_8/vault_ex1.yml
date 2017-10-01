@@ -1,0 +1,28 @@
+---
+- name: VAULT CONFIGURATION
+  hosts: cisco
+  gather_facts: no
+  tasks:
+    - name: CISCO GET FACTS
+      ios_facts:
+        provider: "{{ creds_ssh }}"
+  tags: 
+    - cisco_facts
+
+- name: VAULT CONFIGURATION
+  hosts: nxos
+  gather_facts: no
+  tasks:
+    - name: NXOS GET FACTS
+      nxos_facts:
+        provider: "{{ creds_nxapi }}"
+  tags: nxos_facts
+
+- name: VAULT CONFIGURATION
+  hosts: arista
+  gather_facts: no
+  tasks:
+    - name: ARISTA GET FACTS
+      eos_facts:
+        provider: "{{ creds_eapi }}"
+  tags: arista

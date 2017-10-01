@@ -1,0 +1,35 @@
+---
+- name: ARISTA CONFIGURATION VALIDATION
+  gather_facts: False
+  hosts: pynet-sw7
+  tasks:
+  - name: Check connectivity
+    eos_facts:
+      provider: "{{ creds_eapi }}"
+  - name: Apply VLAN-id configuration
+    eos_config:
+      provider: "{{ creds_eapi }}"
+      lines: "vlan {{ item.vlan_id }}"
+    with_items: "{{ vlans_list }}"
+  - name: Apply VLAN-name configuration
+    eos_config:
+      provider: "{{ creds_eapi }}"
+      lines: "name {{ item.vlan_name }}"
+      parents: "vlan {{ item.vlan_id }}"
+    with_items: "{{ vlans_list }}"
+  - name: Verify configuration applied
+    eos_command:
+      provider: "{{ creds_eapi }}"
+      commands:
+        - show vlan
+    register: all_output
+  - set_fact:
+      all_vlan: "{{ all_output.stdout_lines[0].vlans }}"
+  - name: Print All VLAN output
+    debug:
+      msg: "{{ all_vlan }}"
+  - name: Only Print Vlan ID
+    debug: 
+      msg: "VLAN {{ item.key }} no definida por administrador!!!"
+    when: "{{ item.key }} not in {{ vlans_id }}"
+    with_dict: "{{ all_vlan }}"
